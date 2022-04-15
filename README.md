@@ -6,3 +6,4 @@
 3. $ git init
 4. $ git remote add origin https://github.com/netive1/toss.git
 
+## public 으로 변경
