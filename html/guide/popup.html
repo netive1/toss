@@ -18,14 +18,14 @@
                 <div class="guide_cont">
                     
                     <div class="comp">
-                        <button type="button" class="btn sm t4" data-modal-btn="dialogSizeM">팝업</button>
-                        <button type="button" class="btn sm t4" data-modal-btn="dialogSizeL">전체 팝업</button>
-                        <button type="button" class="btn sm t4" data-modal-btn="dialogBottom">커튼 팝업</button>
-                        <button type="button" class="btn sm t4" data-modal-btn="dialogAlert">알럿 팝업</button>
+                        <button type="button" class="btn sm t4" onclick="fn.popup.init(this, '#dialogSizeM');">팝업</button>
+                        <button type="button" class="btn sm t4" onclick="fn.popup.init(this, '#dialogSizeL');">전체 팝업</button>
+                        <button type="button" class="btn sm t4" onclick="fn.popup.init(this, '#dialogBottom');">커튼 팝업</button>
+                        <button type="button" class="btn sm t4" onclick="fn.popup.init(this,  '#dialogAlert');">알럿 팝업</button>
                     </div>
                     
 
-                    <div class="dialog modal" data-modal="dialogSizeM">
+                    <div class="dialog modal" id="dialogSizeM">
                         <div class="dialog_wrap">
                             <div class="dialog_header sm">
                                 <h1>매수가능금액 안내</h1>
@@ -64,12 +64,15 @@
                             <div class="dialog_footer">                
                                 <div class="dialog_btn_wrap">
                                     <button type="button" class="btn dialog_close">확인</button>
+                                    <button type="button" class="btn" onclick="fn.popup.hideModal(function() {
+                                        alert('callback');
+                                    });">콜백용 확인 버튼</button>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="dialog full" data-modal="dialogSizeL">
+                    <div class="dialog full" id="dialogSizeL">
                         <div class="dialog_wrap">
                             <div class="dialog_header">
                                 <h1>금융상품가입을 위해<br>투자성향을 확인합니다.</h1>
@@ -90,7 +93,7 @@
                         </div>
                     </div>
                     
-                    <div class="dialog bottom" data-modal="dialogBottom">
+                    <div class="dialog bottom" id="dialogBottom">
                         <div class="dialog_wrap">
                             <div class="dialog_header">
                                 <h1>금융상품가입을 위해<br>투자성향을 확인합니다.</h1>
@@ -111,7 +114,7 @@
                         </div>
                     </div>
 
-                    <div class="dialog alert" data-modal="dialogAlert">
+                    <div class="dialog alert" id="dialogAlert">
                         <div class="dialog_wrap">
                             <div class="dialog_header">
                                 <h1>금융상품가입을 위해<br>투자성향을 확인합니다.</h1>
