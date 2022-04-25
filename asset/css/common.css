@@ -54,7 +54,7 @@
 .h3{position:relative; font-size:16px; font-weight:500; line-height:25px; margin:30px 0 15px 0;}
 .h3:first-child{margin-top:0;}
 .h3.mark{padding-left:25px;}
-.h3.mark::before{content:''; position:absolute; left:0; top:4px; width:18px; height:18px; background:url(../../../asset/img/ico_mark.png) no-repeat; background-size:18px;}
+.h3.mark::before{content:''; position:absolute; left:0; top:4px; width:18px; height:18px; background:url(../../asset/img/ico_mark.png) no-repeat; background-size:18px;}
 
 /* Table ***************************************************/
 table .auto{width:auto;}
@@ -148,7 +148,7 @@ table{width:100%; table-layout:fixed; border-spacing:0; margin-top:15px; border-
 
 .check_box label{position:relative; display:inline-block; padding-left:40px; line-height:27px; font-size:16px; color:#666;}
 .check_box label::before{content:''; position:absolute; left:0; top:50%; transform:translateY(-50%); display:inline-block; width:30px; height:30px; background:#eee; border-radius:6px;}
-.check_box label::after{content:''; display:block; position:absolute; left:7px; top:50%; transform:translateY(-50%); width:16px; height:12px; background:url(../../../asset/img/ico_check.png) no-repeat; background-size:16px 36px; animation:fadeIn .1s cubic-bezier(.4,.0,.23,1) forwards;}
+.check_box label::after{content:''; display:block; position:absolute; left:7px; top:50%; transform:translateY(-50%); width:16px; height:12px; background:url(../../asset/img/ico_check.png) no-repeat; background-size:16px 36px; animation:fadeIn .1s cubic-bezier(.4,.0,.23,1) forwards;}
 .check_box input[type="checkbox"]:checked + label{color:#3b7afe; font-weight:500;}
 .check_box input[type="checkbox"]:checked + label::before{background:#3b7afe;}
 
@@ -159,8 +159,8 @@ table{width:100%; table-layout:fixed; border-spacing:0; margin-top:15px; border-
 .terms_list .terms_item{display:flex; justify-content:space-between; align-items:center; padding:0 10px; line-height:23px;}
 .terms_list .terms_item label{padding-left:22px; font-size:inherit;}
 .terms_list .terms_item label::before{width:16px; height:12px; background:none; border-radius:0;}
-.terms_list .terms_item label::after{left:0; width:16px; height:12px; background:url(../../../asset/img/ico_check.png) 0 -24px no-repeat; background-size:16px 36px;}
-.terms_list .terms_item input[type="checkbox"]:checked + label::before{background:transparent url(../../../asset/img/ico_check.png) 0 -12px no-repeat; background-size:16px 36px;}
+.terms_list .terms_item label::after{left:0; width:16px; height:12px; background:url(../../asset/img/ico_check.png) 0 -24px no-repeat; background-size:16px 36px;}
+.terms_list .terms_item input[type="checkbox"]:checked + label::before{background:transparent url(../../asset/img/ico_check.png) 0 -12px no-repeat; background-size:16px 36px;}
 .terms_list .terms_item input[type="checkbox"]:checked + label::after{display:none;}
 .terms_list .terms_cont{padding:15px 0 0 32px; line-height:23px;}
 .terms_list .terms_cont .ico_star{margin-top:15px;}
@@ -207,7 +207,7 @@ table{width:100%; table-layout:fixed; border-spacing:0; margin-top:15px; border-
 .governing{position:relative; margin-bottom:35px; text-align:left;}
 .governing.pw{line-height:26px; text-align:center;}
 .governing.pw .governing_tit{position:relative;}
-.governing.pw .governing_tit::before{content:''; display:block; width:124px; height:24px; background:url(../../../asset/img/logo_hh.png) no-repeat; background-size:124px 24px;}
+.governing.pw .governing_tit::before{content:''; display:block; width:124px; height:24px; background:url(../../asset/img/logo_hh.png) no-repeat; background-size:124px 24px;}
 .governing.ico{padding-top:70px; text-align:center;}
 .governing.ico .governing_tit::before,
 .governing.ico .governing_tit::after{content:''; position:absolute; display:inline-block; background:#fff; border-radius:2px;}
@@ -269,18 +269,18 @@ table{width:100%; table-layout:fixed; border-spacing:0; margin-top:15px; border-
 .guide_box + .guide_box{margin-top:16px;}
 .guide_box:not(.account, .sm){border-radius:10px;}
 .guide_box:not(.account, .sm)::after{display:none;}
-.guide_box.account:first-child::after{content:''; z-index:1; position:absolute; left:50%; bottom:-33px; transform:translateX(-50%); width:52px; height:52px; background:url(../../../asset/img/bg_export_arrow.png) left top no-repeat; background-size:52px;}
+.guide_box.account:first-child::after{content:''; z-index:1; position:absolute; left:50%; bottom:-33px; transform:translateX(-50%); width:52px; height:52px; background:url(../../asset/img/bg_export_arrow.png) left top no-repeat; background-size:52px;}
 .guide_box .dl_list{position:relative; margin-top:0;}
 .guide_box .dl_list::before{content:''; display:block; margin-bottom:16px;}
-.guide_box .acct_t1::before{width:93px; height:18px; background:url(../../../asset/img/logo_ki_s.png) left top no-repeat; background-size:93px 18px;}
-.guide_box .acct_t2::before{width:126px; height:18px; background:url(../../../asset/img/logo_toss.png) left top no-repeat; background-size:126px 18px;}
+.guide_box .acct_t1::before{width:93px; height:18px; background:url(../../asset/img/logo_ki_s.png) left top no-repeat; background-size:93px 18px;}
+.guide_box .acct_t2::before{width:126px; height:18px; background:url(../../asset/img/logo_toss.png) left top no-repeat; background-size:126px 18px;}
 .guide_box .account_num{text-align:center;}
 .guide_box .account_num strong{padding-left:4px; color:#222; font-weight:500; font-family:'roboto';}
 .guide_box > strong{position:relative; display:block; font-weight:500; color:#000;}
 .guide_box.fixed{position:fixed; bottom:0; left:0;}
 
 .issue_comp{position:relative; padding:40px 20px;}
-.issue_comp::after{content:''; position:absolute; right:0; bottom:30px; display:inline-block; width:102px; height:130px; background:url(../../../asset/img/bg_pay.png) no-repeat; background-size:102px 130px;}
+.issue_comp::after{content:''; position:absolute; right:0; bottom:30px; display:inline-block; width:102px; height:130px; background:url(../../asset/img/bg_pay.png) no-repeat; background-size:102px 130px;}
 .issue_comp .h2{display:flex; align-items:center;}
 .issue_comp .rate{margin-top:58px; font-size:22px; font-weight:500; color:#5A6BFF;}
 .issue_comp .rate strong{display:inline-block; vertical-align:text-bottom; padding-left:7px; font-family:'roboto'; font-size:36px;}
