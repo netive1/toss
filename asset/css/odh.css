@@ -10,8 +10,6 @@
 .list_num li .form_wrap .form_list .form_item .radio_box .sub_txt span {display: block; margin-top: 6px; font-size: 14px; line-height: 24px;}
 .list_num li .form_wrap .ico_star {margin-top: 15px; margin-left: -32px; font-size: 14px; color: #666;}
 
-.terms_list.list_type1 {margin: 0; color: #222;}
-.terms_list.list_type1 .terms_cont {padding-left: 10px; padding-right: 10px; color: #666;}
 
 .stick_wrap {margin-top: 68px;}
 .stick_wrap .stick_cont {display: flex; justify-content: space-between; border: 1px solid #eee; border-radius: 6px; background: #f9f9f9;}
