@@ -1,1 +1,18 @@
 @charset "utf-8";
+
+.dialog.modal .dialog_content {
+  height: auto;
+}
+
+.mt-15 {
+  margin-top: 15px !important;
+}
+
+.btn.second{color:#888 ; background:#eee;}
+
+
+table{border-bottom: 0;}
+
+table tbody tr {
+  border: 1px solid #000 !important;
+}
