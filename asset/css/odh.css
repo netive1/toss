@@ -9,3 +9,47 @@
 .list_num li .form_wrap .form_list .form_item.bx .radio_box label {padding-left: 20px; padding-right: 50px; text-align: left; height: auto; line-height: 27px;}
 .list_num li .form_wrap .form_list .form_item .radio_box .sub_txt span {display: block; margin-top: 6px; font-size: 14px; line-height: 24px;}
 .list_num li .form_wrap .ico_star {margin-top: 15px; margin-left: -32px; font-size: 14px; color: #666;}
+
+.terms_list.list_type1 {margin: 0; color: #222;}
+.terms_list.list_type1 .terms_cont {padding-left: 10px; padding-right: 10px; color: #666;}
+
+.stick_wrap {margin-top: 68px;}
+.stick_wrap .stick_cont {display: flex; justify-content: space-between; border: 1px solid #eee; border-radius: 6px; background: #f9f9f9;}
+.stick_wrap .stick_cont .item {padding: 18px 10px; width: 20%; border-right: 1px solid #eee; }
+.stick_wrap .stick_cont .item:last-child {border-right: 0;}
+.stick_wrap .stick_cont .item span {display: block; font-size: 13px; line-height: 17px; text-align: center; color: #888;}
+.stick_wrap .stick_cont .item.one span {padding-top: 8px;}
+.stick_wrap .stick_cont .item.check {position: relative; background: #fff;}
+.stick_wrap .stick_cont .item.check:first-child {background: #fff; border-top-left-radius: 6px; border-bottom-left-radius: 6px;}
+.stick_wrap .stick_cont .item.check:last-child {background: #fff; border-top-right-radius: 6px; border-bottom-right-radius: 6px;}
+.stick_wrap .stick_cont .item.check span {position: relative; color: #3b7afe; font-weight:500;}
+
+.stick_wrap .stick_cont .item.check::before {content: '내 투자성향'; position: absolute; top: -25px; left: 50%; transform: translateX(-50%); display: block; width: 100%; padding: 6px 2px; background: #3b7afe; color: #fff; font-size: 12px; font-weight: 500; border-radius: 4px; text-align: center;}
+.stick_wrap .stick_cont .item.check::after {content: ''; position: absolute; top: -2px; left: 50%; transform: translateX(-50%); display: block; width: 0px; height: 0px; border-left: 6px solid transparent; border-right: 6px solid transparent; border-top: 7px solid #3b7afe;}
+.stick_wrap p {margin-top: 16px; font-size: 14px; line-height: 24px;}
+
+
+
+
+.stick_wrap .stick_cont .item2 {padding: 18px 10px; width: 20%; border-right: 1px solid #eee;}
+.stick_wrap .stick_cont .item2:last-child {border-right: 0;}
+.stick_wrap .stick_cont .item2 span {display: block; font-size: 13px; line-height: 17px; text-align: center; color: #888;}
+.stick_wrap .stick_cont .item2.one span {padding-top: 8px;}
+.stick_wrap .stick_cont .item2.check {position: relative; background: #fff;}
+.stick_wrap .stick_cont .item2.check:first-child {background: #fff; border-top-left-radius: 6px; border-bottom-left-radius: 6px;}
+
+.stick_wrap .stick_cont .item2.check:last-child {
+    background: #fff;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.stick_wrap .stick_cont .item2.check span {
+    position: relative;
+    color: #3b7afe;
+    font-weight: 500;
+}
+
+.stick_wrap .stick_cont.type1 .item2.check {position: relative;}
+.stick_wrap .stick_cont.type1 .item2.check::before {content: ''; position: absolute; top: -14px; left: 50%; transform: translateX(-50%); padding: 0; display: block; width: 100%; height: 8px; border-top: 1px solid #222; border-left: 1px solid #222; border-right: 1px solid #222; background: none; border-radius: 0;}
+.stick_wrap .stick_cont.type1 .item2.check::after {content: '적합한 상품의 위험등급'; position: absolute; top: -50px; left: 50%; transform: translateX(-50%); display: block; width: 100%; color: #222; font-size: 13px;}
