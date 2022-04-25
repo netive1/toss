@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+/* Noto Sans KR */
+@font-face {
+  font-family:'Noto Sans KR';
+  font-style:normal;
+  font-weight:700;
+  src:url(../fonts/notosans/notokr-bold.woff2) format("woff2"), 
+      url(../fonts/notosans/notokr-bold.woff) format("woff")
+}
+@font-face {
+  font-family:'Noto Sans KR';
+  font-style:normal;
+  font-weight:500;
+  src:url(../fonts/notosans/notokr-medium.woff2) format("woff2"), 
+      url(../fonts/notosans/notokr-medium.woff) format("woff")
+}
+@font-face {
+  font-family:'Noto Sans KR';
+  font-style:normal;
+  font-weight:400;
+  src:url(../fonts/notosans/notokr-regular.woff2) format("woff2"), 
+      url(../fonts/notosans/notokr-regular.woff) format("woff")
+}
+
+/* Roboto */
+@font-face {
+  font-family:'roboto';
+  font-style:normal;
+  font-weight:700;
+  src:url(../fonts/roboto/Roboto-Black.woff2) format("woff2"), 
+      url(../fonts/roboto/Roboto-Black.woff) format("woff")
+}
+@font-face {
+  font-family:'roboto';
+  font-style:normal;
+  font-weight:500;
+  src:url(../fonts/roboto/Roboto-Bold.woff2) format("woff2"), 
+      url(../fonts/roboto/Roboto-Bold.woff) format("woff")
+}
+@font-face {
+  font-family:'roboto';
+  font-style:normal;
+  font-weight:400;
+  src:url(../fonts/roboto/Roboto-Regular.woff2) format("woff2"), 
+      url(../fonts/roboto/Roboto-Regular.woff) format("woff")
+}

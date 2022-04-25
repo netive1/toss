@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+@import url(./font.css);
+
+* {margin:0; padding:0; box-sizing:border-box;}
+header, footer, nav, section, article, aside{display:block;}
+html,body{height:100%;vertical-align:baseline;text-size-adjust:100%;}
+html,body,div,span,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,blockquote,p,address,pre,cite,form,fieldset,caption,input,textarea,select,table,th,td,button{margin:0;padding:0;font-family:inherit;letter-spacing:inherit;}
+body{padding:0;margin:0;background:#fff;color:#666;font-size:14px;font-weight:400;line-height:1;letter-spacing:-0.5px;font-family:'Noto Sans KR', 'roboto', '돋움', Dotum, '굴림', Gulim, Arial, Verdana, sans-serif;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:normal;color:#111;line-height:1;}
+ul,ol{list-style:none}
+i,em,address{font-style:normal}
+a{color:#333; text-decoration:none;}
+button{display:inline-block;cursor:pointer;border:0;background:transparent;}
+img{border:0 none; vertical-align:middle;}
+caption,legend,.offscr{display:inline-block; position:absolute !important; width:1px !important; height:1px !important; color:transparent !important; overflow:hidden !important;clip:rect(1px, 1px, 1px, 1px);clip-path:inset(50%);margin:-1px 0 0;}
+pre{white-space:pre-wrap}
+q:before,q:after{content:''}
+sub,sup{vertical-align:super}
+
+input[type="radio"], input[type="checkbox"]{position:absolute; display:inline-block; width:1px; height:1px; margin:-1px; border:0; overflow:hidden; padding:0; clip:rect(0,0,0,0); appearance:none; -moz-appearance:none; -webkit-appearance:none; opacity:0;}
+input[type="radio"]:focus+label::before,
+input[type="checkbox"]:focus+label::before{box-shadow:0px 0px 1px 1px #777}
+input[type="text"]{width:100%;height:60px;padding:15px 20px;font-size:18px;border:1px solid #ddd;border-radius:6px;}
+input[type=text]:focus{outline:transparent;border-color:#3B7AFE;}
+input[type=text]::-ms-clear{display:none}
+::-webkit-input-placeholder{font-family:'Noto Sans KR', 'roboto';font-weight:400;font-size:18px;color:#ccc;opacity:1}
+:-moz-placeholder{font-family:'Noto Sans KR', 'roboto';font-weight:400;font-size:18px;color:#ccc;opacity:1}
+::-moz-placeholder{font-family:'Noto Sans KR', 'roboto';font-weight:400;font-size:18px;color:#ccc;opacity:1}
+:-ms-input-placeholder{font-family:'Noto Sans KR', 'roboto'!important;font-weight:400!important;color:#ccc!important;opacity:1}
+input[type=text]:focus::-webkit-input-placeholder{visibility:hidden}
+input[type=text]:focus:-moz-placeholder{visibility:hidden}
+input[type=text]:focus::-moz-placeholder{visibility:hidden}
+input[type=text]:focus:-ms-input-placeholder{visibility:hidden}
+select{width:100%;height:60px;padding:0 40px 0 15px;font-size:18px;border:1px solid #ddd;border-radius:6px;vertical-align:middle;background:#fff url(../../asset/img/ico_dropdown.png) right 20px top 50% no-repeat;background-size:14px 8px;font-size:18px;-webkit-appearance:none;-moz-appearance:none;appearance:none}
+select option{color:#222;}
+select option[value=""][disabled]{display:none;}
+select:invalid{color:#ccc;}
+select::-ms-expand{display:none}
+
+
+/* skip */
+#skipNav{position:absolute;width:100%;margin:0 auto;z-index:1000}
+#skipNav a{position:absolute;top:-500px;width:100%;padding:10px 0;background-color:#01407e;color:#fff;text-align:center}
+#skipNav a:focus{top:0}
+
+html.lock, html.lock body{overflow:hidden}
+html.lock #wrap{position:fixed;left:0;bottom:0;width:100%}
+.dimmed{position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,.6);z-index:101;opacity:0;transition:0.4s}
+.dimmed.show{opacity:1}
+.ell{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;-moz-binding:url(ellipsis.xml#ellipsis)}
+.ell2{display:-webkit-box!important;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}

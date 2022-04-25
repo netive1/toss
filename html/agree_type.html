@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-compatible" content="IE=edge, chrome=1" />
+    <title>make a agree</title>
+    <link rel="stylesheet" type="text/css" href="../asset/css/guide.css">
+    <!-- <script type="text/javascript" src="../asset/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../asset/js/jquery.easing.min.js"></script> -->
+    <!-- <script type="text/javascript" src="../asset/js/common.js"></script> -->
+    <link rel="shortcut icon" href="/practice/jyDev/asset/img/favicon-32x32.png">
+</head>
+<body>
+    <header>
+        <h1>Agree</h1>
+    </header>
+    <div class="wrap">
+
+        <div class="agree-wrap">
+            <div class="input-wrap ui-all">
+                <input type="checkbox" id="exInpAll" name="agreeAll">
+                <label for="exInpAll">전체동의</label>
+            </div>
+            <div class="input-wrap">
+                <input type="checkbox" id="exInp1" name="agree" data-name="agree">
+                <label for="exInp1">약관1</label>
+            </div>
+            <div class="input-wrap">
+                <input type="checkbox" id="exInp2" name="agree" data-name="agree">
+                <label for="exInp2">약관2</label>
+            </div>
+            <div class="input-wrap">
+                <input type="checkbox" id="exInp3" name="agree" data-name="agree">
+                <label for="exInp3">약관3</label>
+            </div>
+            <div class="input-wrap">
+                <input type="checkbox" id="exInp4" name="agree" data-name="agree">
+                <label for="exInp4">약관4</label>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        // IE 11 폴리필
+        if ('NodeList' in window && !NodeList.prototype.forEach) {
+            console.info('polyfill for IE11');
+            NodeList.prototype.forEach = function (callback, thisArg) {
+                thisArg = thisArg || window;
+                for (var i = 0; i < this.length; i++) {
+                callback.call(thisArg, this[i], i, this);
+                }
+            };
+        }
+
+        // 변수선언
+        const inputs = document.querySelectorAll('.input-wrap');
+        const inpItem = document.querySelector('.agree-wrap');
+        const inputAllWrap = document.querySelector('.ui-all').children[0];
+        const inpChild = siblings(inputAllWrap.parentElement);
+    
+        window.addEventListener('load', function() {        
+            // 전체동의
+            inputAllWrap.addEventListener('change', evtCheckAll);  
+
+            // 개별동의
+            for (let i=0; i<inputs.length; i++) {
+                inputs[i].addEventListener('change', evtCheck);
+            }
+        });
+
+        // 체크박스 전체선택
+        function evtCheckAll(e) {  
+            const t = e.target;
+            
+            console.log(t);
+            if (!t.checked){ 
+                // IE 11 지원 O
+                inpChild.forEach(function(input) {
+                    input.children[0].checked = false  
+                });
+                // IE 11 지원 X  
+                // inpChild.forEach(input => input.children[0].checked = false);
+            } else {
+                // IE 11 지원 O
+                inpChild.forEach(function(input) {
+                    input.children[0].checked = true
+                });
+                // IE 11 지원 X 
+                //inpChild.forEach(input => input.children[0].checked = true);
+            }
+        }
+
+        // 체크박스 선택
+        function evtCheck() { 
+            const isCheck = document.querySelectorAll('[data-name="agree"]');
+            let len = isCheck.length;
+            let checked = 0;
+
+            for(let j=0; j<len; j++) {
+                if(isCheck[j].checked) {
+                    checked += 1;
+                }
+            }
+
+            if (checked == len) {
+                inputAllWrap.checked = true;
+            } else {
+                inputAllWrap.checked = false;
+            }  
+            //console.log(checked, isCheck.length);
+        }
+
+        // siblings (자식찾기)
+        function siblings(t) {
+            const children = t.parentElement.children;
+            let childlist = [];
+
+            for (var i = 0; i < children.length; i++) {
+                childlist.push(children[i]);
+            }
+            return childlist.filter(function(e){
+                return e != t;
+            });
+        }
+    </script>
+</body>
+</html>
+
