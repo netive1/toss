@@ -43,7 +43,7 @@
 .btn_price > .btn{min-width:auto; width:calc(20% - 3px); padding:0 7px; color:#222; border-color:#eee;}
 
 .fixed_btm_btns{display:flex; position:fixed; bottom:0; left:0; width:100%;}
-.fixed_btm_btns .btn{width:50%; min-width:auto; margin:0; border:0; border-radius:0;}
+.fixed_btm_btns .btn{ min-width:auto; margin:0; border:0; border-radius:0;}
 .fixed_btm_btns.t1 .btn{width:calc(100% - 115px);}
 .fixed_btm_btns.t1 .btn:first-child{width:115px;}
 
@@ -131,7 +131,7 @@ table{width:100%; table-layout:fixed; border-spacing:0; margin-top:15px; border-
 .form_group .form_item:not(:first-child){margin-left:8px;}
 .form_group .form_item.bx{width:100%;}
 
-.form_item.bx .radio_box label{display:block; min-width:100px; height:50px; padding:17px 0; text-align:center; line-height:1; color:#666; font-weight:400; border-radius:6px; box-shadow:1px 2px 8px 0 rgb(0 0 0 / 10%);}
+.form_item.bx .radio_box label{display:block; min-width:100px; min-height:50px; padding:17px 0; text-align:center; line-height:1; color:#666; font-weight:400; border-radius:6px; box-shadow:1px 2px 8px 0 rgb(0 0 0 / 10%);}
 .form_item.bx .radio_box label::before, 
 .form_item.bx .radio_box label::after{display:none;}
 .form_item.bx .radio_box input[type="radio"]:checked + label{font-weight:500; outline:1px solid #3b7afe;}
@@ -231,6 +231,43 @@ table{width:100%; table-layout:fixed; border-spacing:0; margin-top:15px; border-
 [class^="add_txt"]:first-child{margin-top:12px;}
 .add_txt1{color:#f32f2f;}
 .add_txt2{margin-top:10px; color:#3b7afe;}
+
+/* Main ***************************************************/
+.main_visual{padding:80px 0 104px; background:#4e87fe url(../../asset/img/main_logo.png) right 18px top 25px no-repeat; background-size:158px 16px;}
+.main_visual .btn{width:100px; height:34px; line-height:1; color:#4e87fe; font-weight:500; font-size:inherit; border:0; border-radius:17px;}
+.main_visual h1{margin-bottom:30px; font-size:28px; font-weight:600; color:#fff; line-height:40px;}
+.main_visual h1 p{margin-bottom:7px; font-size:16px; font-weight:400; line-height:1;}
+.main_visual .slick-list{padding-left:25px;}
+
+
+.main_content{margin-top:-40px;}
+.main_content .comp{padding:0; margin:0 12px; border-radius:20px; background:#fff; box-shadow:0 2px 15px 0px rgb(0 0 0 / 15%);}
+.main_content .comp:not(:first-of-type){margin-top:20px;}
+
+.quick_menu_list{}
+.quick_menu_list .h2{}
+.quick_menu_list .quick_item{}
+.quick_menu_list ul li{}
+.quick_menu_list ul li > span{}
+.quick_menu_list .menu1{}
+.quick_menu_list .menu2{}
+.quick_menu_list .menu3{}
+
+
+.stock_goods_list{padding:40px 0;}
+.stock_goods_list > li{padding-bottom:30px; margin:0 20px; border-bottom:1px solid #eee;}
+.stock_goods_list > li:last-child{border-bottom:0;}
+.stock_goods_list > li + li{padding:30px 0 0;}
+.stock_goods_list > li a{display:block;}
+.stock_goods_list strong{display:inline-flex; font-size:22px;}
+.stock_goods_list .dl_list{display:flex; align-items:center;}
+.stock_goods_list .dl_list > div{position:relative; display:inline-flex; margin-left:16px;}
+.stock_goods_list .dl_list > div:first-child{margin-left:0;}
+.stock_goods_list .dl_list > div:first-child::before{display:none;}
+.stock_goods_list .dl_list > div::before{content:''; position:absolute; left:-8px; top:2px; display:block; width:1px; height:10px; background-color:#ddd;}
+.stock_goods_list .dl_list dt{margin-right:3px;}
+.stock_goods_list .dl_list dt, .stock_goods_list .dl_list dd{color:#666;}
+
 
 
 /* Container ***************************************************/
