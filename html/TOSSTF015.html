@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <meta name="format-detection" content="telephone=no">
+    <title>Layout</title>
+    <script src="../asset/js/jquery-3.6.0.min.js"></script>
+    <script src="../asset/js/ui_plugins.js"></script>
+    <script src="../asset/js/ui_common.js"></script>
+    <link rel="stylesheet" href="../asset/css/contents.css">
+</head>
+
+<body>
+    <div id="wrap">
+
+        <header id="header">
+            <h1 class="offscr">한국투자증권 토스 웹 발행어음거래</h1>
+            <p>한국투자증권에서 제공하는 서비스입니다</p>
+        </header>
+
+        <section id="container">
+            <div class="content">
+                <div class="comp">
+                    <h3 class="governing_tit mt40">투자성향 분석</h3>
+                </div>
+
+                <div class="comp">
+                    <ol class="list_num type1">
+                        <li>
+                            <p>월 소득금액은 어느 정도 인가요?</p>
+                            <div class="form_wrap">
+                                <div class="form_list">
+                                    <div class="form_item bx">
+                                        <div class="radio_box">
+                                            <input type="radio" id="radioBtn" name="inpRadio1">
+                                            <label for="radioBtn">100만원 미만</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form_list">
+                                    <div class="form_item bx">
+                                        <div class="radio_box">
+                                            <input type="radio" id="radioBtn2" name="inpRadio1">
+                                            <label for="radioBtn2">100만원 ~ 200만원</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form_list">
+                                    <div class="form_item bx">
+                                        <div class="radio_box">
+                                            <input type="radio" id="radioBtn3" name="inpRadio1">
+                                            <label for="radioBtn3">200만원 ~ 300만원</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form_list">
+                                    <div class="form_item bx">
+                                        <div class="radio_box">
+                                            <input type="radio" id="radioBtn4" name="inpRadio1">
+                                            <label for="radioBtn4">300만원 ~ 500만원</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form_list">
+                                    <div class="form_item bx">
+                                        <div class="radio_box">
+                                            <input type="radio" id="radioBtn5" name="inpRadio1">
+                                            <label for="radioBtn5">500만원 초과</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <p>금융상품에 투자하는 목적은 무엇인가요?</p>
+                            <div class="form_wrap">
+                                <div class="form_list">
+                                    <div class="form_item bx">
+                                        <div class="radio_box">
+                                            <input type="radio" id="radioBtn6" name="inpRadio2">
+                                            <label for="radioBtn6">생계(단기)자금 운용</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form_list">
+                                    <div class="form_item bx">
+                                        <div class="radio_box">
+                                            <input type="radio" id="radioBtn7" name="inpRadio2">
+                                            <label for="radioBtn7">예 · 적금 정도의 수익 실현</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form_list">
+                                    <div class="form_item bx">
+                                        <div class="radio_box">
+                                            <input type="radio" id="radioBtn8" name="inpRadio2">
+                                            <label for="radioBtn8">시장(예: 주가지수)가격 변동 추이보다 높은 수준의 수익 실현</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form_list">
+                                    <div class="form_item bx">
+                                        <div class="radio_box">
+                                            <input type="radio" id="radioBtn9" name="inpRadio2">
+                                            <label for="radioBtn9">적극적인 투자를 통한 보유자산 증식</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <p>전체 금융자산 중, *투자성자산의 비중은<br> 어느 정도 인가요?</p>
+                            <div class="form_wrap">
+                                <div class="form_list">
+                                    <div class="form_group">
+                                        <div class="form_item bx">
+                                            <div class="radio_box">
+                                                <input type="radio" id="radioA_1" name="inpRadio3">
+                                                <label for="radioA_1">10% 이하</label>
+                                            </div>
+                                        </div>
+                                        <div class="form_item bx">
+                                            <div class="radio_box">
+                                                <input type="radio" id="radioA_2" name="inpRadio3">
+                                                <label for="radioA_2">30% 이하</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form_list">
+                                    <div class="form_group">
+                                        <div class="form_item bx">
+                                            <div class="radio_box">
+                                                <input type="radio" id="radioA_3" name="inpRadio3">
+                                                <label for="radioA_3">50% 이하</label>
+                                            </div>
+                                        </div>
+                                        <div class="form_item bx">
+                                            <div class="radio_box">
+                                                <input type="radio" id="radioA_4" name="inpRadio3">
+                                                <label for="radioA_4">70% 이하</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form_list">
+                                    <div class="form_group">
+                                        <div class="form_item bx half">
+                                            <div class="radio_box">
+                                                <input type="radio" id="radioA_5" name="inpRadio3">
+                                                <label for="radioA_5">70% 초과</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="ico_star">주식, 펀드 등</p>
+                            </div>
+                        </li>
+                        <li>
+                            <p>투자경험이 있는 금융상품을 모두 선택해주세요.</p>
+                            <div class="form_wrap">
+                                <div class="form_list">
+                                    <div class="form_item bx">
+                                        <div class="radio_box">
+                                            <input type="radio" id="radioBtn10" name="inpRadio4">
+                                            <label for="radioBtn10">안정형 상품
+                                                <div class="sub_txt">
+                                                    <span>은행 예 · 적금, MMF, RP, CMA, 국공채, 통안채, 지방채, 보증채, 특수채 등</span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form_list">
+                                    <div class="form_item bx">
+                                        <div class="radio_box">
+                                            <input type="radio" id="radioBtn11" name="inpRadio4">
+                                            <label for="radioBtn11">안정추구형 상품
+                                                <div class="sub_txt">
+                                                    <span>채권형펀드, 원금보장형 ELS, 금융채, 신용도가 높은 회사채/CP 등</span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form_list">
+                                    <div class="form_item bx">
+                                        <div class="radio_box">
+                                            <input type="radio" id="radioBtn12" name="inpRadio4">
+                                            <label for="radioBtn12">위험중립형 상품
+                                                <div class="sub_txt">
+                                                    <span>혼합채권형펀드, 원금부분보장형 ELS, 신용도가 중간등급인 회사채/CP 등</span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form_list">
+                                    <div class="form_item bx">
+                                        <div class="radio_box">
+                                            <input type="radio" id="radioBtn13" name="inpRadio4">
+                                            <label for="radioBtn13">적극투자형 상품
+                                                <div class="sub_txt">
+                                                    <span>주식형/혼합주식형/인덱스펀드, 원금비보장형 ELS, 주식, 신용도가 낮은 회사채/CP 등</span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form_list">
+                                    <div class="form_item bx">
+                                        <div class="radio_box">
+                                            <input type="radio" id="radioBtn14" name="inpRadio4">
+                                            <label for="radioBtn14">공격투자형 상품
+                                                <div class="sub_txt">
+                                                    <span>파생상품 투자펀드, ELF, ELW, 선물옵션, ETN, 외화증권 주식신용거래 등</span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <p>*금융투자상품에 대한 금융지식/이해도는<br> 어느 정도인가요?</p>
+                            <div class="form_wrap">
+                                <div class="form_list">
+                                    <div class="form_item bx">
+                                        <div class="radio_box">
+                                            <input type="radio" id="radioBtn15" name="inpRadio5">
+                                            <label for="radioBtn15">*금융투자상품에 투자해 본 경험이 있음</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form_list">
+                                    <div class="form_item bx">
+                                        <div class="radio_box">
+                                            <input type="radio" id="radioBtn16" name="inpRadio5">
+                                            <label for="radioBtn16">널리 알려진 *금융투자상품의 구조 및 위험을 일정 부분 이해하고 있음</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form_list">
+                                    <div class="form_item bx">
+                                        <div class="radio_box">
+                                            <input type="radio" id="radioBtn17" name="inpRadio5">
+                                            <label for="radioBtn17">널리 알려진 *금융투자상품의 구조 및 위험을 일정 부분 이해하고 있음</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form_list">
+                                    <div class="form_item bx">
+                                        <div class="radio_box">
+                                            <input type="radio" id="radioBtn18" name="inpRadio5">
+                                            <label for="radioBtn18">파생상품을 포함한 대부분의 *금융투자상품의 구조 및 위험을 이해하고 있음</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="ico_star">주식, 채권 및 펀드 등</p>
+                            </div>
+                        </li>
+                        <li>
+                            <p>*파생상품에 대한 투자경험은 어느 정도인가요?</p>
+                            <div class="form_wrap">
+                                <div class="form_list">
+                                    <div class="form_item bx">
+                                        <div class="radio_box">
+                                            <input type="radio" id="radioBtn19" name="inpRadio6">
+                                            <label for="radioBtn19">투자경험없음 / 1년미만</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form_list">
+                                    <div class="form_item bx">
+                                        <div class="radio_box">
+                                            <input type="radio" id="radioBtn20" name="inpRadio6">
+                                            <label for="radioBtn20">1년 이상 ~ 3년 미만</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form_list">
+                                    <div class="form_item bx">
+                                        <div class="radio_box">
+                                            <input type="radio" id="radioBtn21" name="inpRadio6">
+                                            <label for="radioBtn21">3년 이상</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="ico_star">선물, 옵션, ELS, ETN, 해외선물, FX마진 등</p>
+                            </div>
+                        </li>
+                        <li>
+                            <p>투자하고자 하는 자금의 투자예정기간은<br> 어느 정도인가요?</p>
+                            <div class="form_wrap">
+                                <div class="form_list">
+                                    <div class="form_item bx">
+                                        <div class="radio_box">
+                                            <input type="radio" id="radioBtn22" name="inpRadio7">
+                                            <label for="radioBtn22">6개월 미만</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form_list">
+                                    <div class="form_item bx">
+                                        <div class="radio_box">
+                                            <input type="radio" id="radioBtn23" name="inpRadio7">
+                                            <label for="radioBtn23">6개월 이상 ~ 1년 미만</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form_list">
+                                    <div class="form_item bx">
+                                        <div class="radio_box">
+                                            <input type="radio" id="radioBtn24" name="inpRadio7">
+                                            <label for="radioBtn24">1년 이상 ~ 2년 미만</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form_list">
+                                    <div class="form_item bx">
+                                        <div class="radio_box">
+                                            <input type="radio" id="radioBtn25" name="inpRadio7">
+                                            <label for="radioBtn25">2년 이상 ~ 3년 미만</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form_list">
+                                    <div class="form_item bx">
+                                        <div class="radio_box">
+                                            <input type="radio" id="radioBtn26" name="inpRadio7">
+                                            <label for="radioBtn26">13년 이상</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <p>투자원금에 손실이 발생한 경우, 감내할 수 있는 손실수준은 어느 정도인가요?</p>
+                            <div class="form_wrap">
+                                <div class="form_list">
+                                    <div class="form_item bx">
+                                        <div class="radio_box">
+                                            <input type="radio" id="radioBtn27" name="inpRadio8">
+                                            <label for="radioBtn27">무슨 일이 있어도 투자원금은 보전되어야 함</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form_list">
+                                    <div class="form_item bx">
+                                        <div class="radio_box">
+                                            <input type="radio" id="radioBtn28" name="inpRadio8">
+                                            <label for="radioBtn28">투자원금에서 최소한의 손실만을 감수할 수 있음</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form_list">
+                                    <div class="form_item bx">
+                                        <div class="radio_box">
+                                            <input type="radio" id="radioBtn29" name="inpRadio8">
+                                            <label for="radioBtn29">투자원금 중 일부의 손실을 감수할 수 있음</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form_list">
+                                    <div class="form_item bx">
+                                        <div class="radio_box">
+                                            <input type="radio" id="radioBtn30" name="inpRadio8">
+                                            <label for="radioBtn30">기대수익이 높다면 위험이 높아도 상관하지 않음</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <p>*금융취약투자자에 해당 되시나요?</p>
+                            <div class="form_wrap">
+                                <div class="form_list">
+                                    <div class="form_item bx">
+                                        <div class="radio_box">
+                                            <input type="radio" id="radioBtn31" name="inpRadio9">
+                                            <label for="radioBtn31">*금융취약투자자 아님</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form_list">
+                                    <div class="form_item bx">
+                                        <div class="radio_box">
+                                            <input type="radio" id="radioBtn32" name="inpRadio9">
+                                            <label for="radioBtn32">*금융취약투자자 입니다</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="ico_star">고령자, 은퇴자, 주부 등 투자지식이 부족할 수 있는 소비자 그룹</p>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="fixed_btm_btns">
+                    <button type="button" class="btn primary">결과보기</button>
+                </div>
+            </div>
+        </section>        
+
+    </div>
+</body>
