@@ -20,7 +20,12 @@
 .stick_wrap .stick_cont .item.check {position: relative; background: #fff;}
 .stick_wrap .stick_cont .item.check:first-child {background: #fff; border-top-left-radius: 6px; border-bottom-left-radius: 6px;}
 .stick_wrap .stick_cont .item.check:last-child {background: #fff; border-top-right-radius: 6px; border-bottom-right-radius: 6px;}
-.stick_wrap .stick_cont .item.check span {position: relative; color: #3b7afe; font-weight:500;}
+.stick_wrap .stick_cont .item.check span {position: relative; font-weight:500;}
+.stick_wrap .stick_cont .item.check span.f1 {color: #3b7afe;}
+.stick_wrap .stick_cont .item.check span.f2 {color: #5EC085;}
+.stick_wrap .stick_cont .item.check span.f3 {color: #EF9A1B;}
+.stick_wrap .stick_cont .item.check span.f4 {color: #EF671B;}
+.stick_wrap .stick_cont .item.check span.f5 {color: #F32F2F;}
 
 .stick_wrap .stick_cont .item.check::before {content: '내 투자성향'; position: absolute; top: -25px; left: 50%; transform: translateX(-50%); display: block; width: 100%; padding: 6px 2px; background: #3b7afe; color: #fff; font-size: 12px; font-weight: 500; border-radius: 4px; text-align: center;}
 .stick_wrap .stick_cont .item.check::after {content: ''; position: absolute; top: -2px; left: 50%; transform: translateX(-50%); display: block; width: 0px; height: 0px; border-left: 6px solid transparent; border-right: 6px solid transparent; border-top: 7px solid #3b7afe;}
@@ -37,6 +42,7 @@
 .stick_wrap .stick_cont .item2.check:first-child {background: #fff; border-top-left-radius: 6px; border-bottom-left-radius: 6px;}
 .stick_wrap .stick_cont .item2.check:last-child {background: #fff; border-top-right-radius: 6px; border-bottom-right-radius: 6px;}
 .stick_wrap .stick_cont .item2.check span {position: relative; color: #3b7afe; font-weight: 500;}
+
 
 .stick_wrap .stick_cont.type1 .item2.check {position: relative;}
 .stick_wrap .stick_cont.type1 .item2.check::before {content: ''; position: absolute; top: -14px; left: 50%; transform: translateX(-50%); padding: 0; display: block; width: 100%; height: 8px; border-top: 1px solid #222; border-left: 1px solid #222; border-right: 1px solid #222; background: none; border-radius: 0;}
