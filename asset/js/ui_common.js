@@ -3,7 +3,7 @@ $(function() {
   fn.horizonTable();
   fn.hrefReset();
   fn.tab();
-  fn.popup();
+  fn.popup.init();
 
 });
 
@@ -90,54 +90,110 @@ const fn = {
         });
     }
   },
-  popup : function() {
-      var $dialogBtn, 
-          $dialog,
-          $closeBtn, 
-          btnName, 
-          dialogName = null;
+  popup : {
+    gBtn: null,
+    gTarget: null,
+    gModal: null,
+    gWinH: null,
+    gHtml: null,
+    gScrollT: null,
+    sFixedClass: 'ui-fixed', // 스크롤 길경우
+    callback: null,
+    scrollVal: function() {
+      var o = this;
+      o.gScrollT =  $(window).scrollTop();
+    },
+    hideModal: function(callback) {
+      var o = this;
+      o.gHtml.removeClass(o.sFixedClass).removeAttr('style').scrollTop(o.gScrollT);
+      o.gTarget.removeClass('show');
+      o.gTarget.attr({'tabindex': '-1', 'aria-hidden': 'true'});
+      setTimeout(function() {
+        o.gBtn.focus();
+      }, 100);
 
-        function init() {
-          $dialogBtn = $('[data-modal-btn]');
-          $dialog = $('.dialog');
-          $closeBtn = $('.dialog_close');
-          $dialog.attr('role', 'dialog');
-
-          $dialog.attr('tabindex', -1);
-        }
-
-        function event() {
-          $dialogBtn.on('click', function() {   
-            btnName = $(this).data('modalBtn');
-            $dialog.data('modal', btnName);
-
-            $(this).attr('data-focused', true).focus();
-
-            open(btnName);   
-          });
-
-          $closeBtn.on('click', function() {  
-            close($(this));
-          });
-        };
+      if(typeof callback === 'function') {
+        o.callback = callback;
+        o.callback();
+      }
+    },
+    showModal: function() {
+      var o = this;
+      o.scrollVal();
         
-        function open(target) {
-          $('[data-modal='+target+']').addClass('show');
-          $('[data-modal='+target+']').attr({'tabindex':0, 'aria-hidden': false}).focus();
-        }
+      setTimeout(function() {
+          o.gHtml.addClass(o.sFixedClass).height(o.gWinH).scrollTop(o.gScrollT);
+          o.gTarget.focus();
+      }, 100);
 
-        function close(target) {
-          var $dialogBody = target.closest($dialog);
-              dialogName = $dialogBody.data('modal');
-           
-              $dialogBody.removeClass('show').removeAttr('tabindex');
-              $dialogBody.attr('aria-hidden', true);
+      o.gTarget.addClass('show');
+      o.gTarget.attr({'tabindex': '0', 'aria-hidden': 'false'});
+    },
+    init: function(t, target, callback) {
+      var o = this;
+      o.gBtn = $(t);
+      o.gTarget = $(target);
+      o.gWinH = $(window).height();
+      o.gHtml = $('body, html');
 
-          if($dialogBtn.data('focused') === true) {
-            $('[data-modal-btn='+dialogName+']').removeAttr('data-focused').focus();
-          }
-        }
-        init();
-        event(); 
+      o.showModal();
+
+      if(typeof callback === 'function') {
+        o.callback = callback;
+        o.callback();
+      }
+
+      o.gTarget.find('.dialog_close').off().on('click', function() {
+        o.hideModal();
+      });
+    }
   }
+}
+
+// tooltip
+$.fn.uiToolTip = function() {
+  return this.each(function() {
+    var $t = $(this),
+        _parent = '.ui-tooltip-wrap',
+        _tooltip = '.toolTip',
+        _edge = '.toolTip > i',
+        _closeBtn = '.typeModalClose',
+        $parent = $t.closest(_parent),
+        $tootip = $t.closest(_parent).find(_tooltip),
+        $edge = $t.closest(_parent).find(_edge),
+        $closeBtn = $tootip.find(_closeBtn),
+        edgePos = '30px',
+        $winW = $(window).width(),
+        whiteSpace = 20; // 모바일에서 툴팁의 좌우 여백
+
+    $t.on('click', function() {
+        
+      if($tootip.is(':visible')) return;
+      
+      $tootip.show();
+      if($tootip.offset().left + $tootip.innerWidth() > $(window).width()) { // 툴팁의 offset left 값 + 가로값이 브라우자 가로폭보도 큰경우, 즉 화면을 넘어간 경우
+        $tootip.css('right', '-' + edgePos);
+        $edge.css('right', edgePos);
+      } else {
+        console.log($winW, $tootip.offset().left, Math.floor($tootip.offset().left) + whiteSpace);
+        $tootip.css({
+          'width': $winW - (whiteSpace * 2),
+          'left': Math.floor(whiteSpace - $tootip.offset().left) + 'px',
+        });
+        $edge.css('left', $t.offset().left - $tootip.offset().left);
+      }
+      setTimeout(function() {
+        $parent.addClass('active');
+      },100);
+
+      $closeBtn.off().on('click', function() {
+        $parent.removeClass('active');
+        setTimeout(function() {
+          $tootip.removeAttr('style');
+          $edge.removeAttr('style');
+          $t.focus();
+        },100);
+      });
+    });
+  });
 }
