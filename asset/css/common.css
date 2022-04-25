@@ -156,8 +156,8 @@ table{width:100%; table-layout:fixed; border-spacing:0; margin-top:15px; border-
 
 
 .confirm_list{margin:0 20px; border-top:1px solid #222;}
-.confirm_list > li{padding:13px 0 12px; border-bottom:1px solid #eee;}
-.confirm_list > li:last-child{padding-bottom:15px;}
+.confirm_list ul li{padding:13px 0 12px; border-bottom:1px solid #eee;}
+.confirm_list ul li:last-child{padding-bottom:15px;}
 .confirm_list .terms_item{display:flex; justify-content:space-between; align-items:center; padding:0 10px; line-height:23px;}
 .confirm_list .terms_item label{padding-left:22px; font-size:inherit;}
 .confirm_list .terms_item label::before{width:16px; height:12px; background:none; border-radius:0;}
@@ -165,10 +165,11 @@ table{width:100%; table-layout:fixed; border-spacing:0; margin-top:15px; border-
 .confirm_list .terms_item input[type="checkbox"]:checked + label::before{background:transparent url(../../asset/img/ico_check.png) 0 -12px no-repeat; background-size:16px 36px;}
 .confirm_list .terms_item input[type="checkbox"]:checked + label::after{display:none;}
 .confirm_list .terms_cont{padding:15px 0 0 32px; line-height:23px;}
-.confirm_list .terms_cont .ico_star{margin-top:15px;}
+.confirm_list .ico_star{margin-top:15px;}
 .confirm_list.t1 {margin:0; color:#222;}
+.confirm_list.t1 ul li{padding:20px 0 20px;}
 .confirm_list.t1 .terms_cont{padding-left:10px; padding-right:10px; color:#666;}
-
+.confirm_list.t1 dl{padding:0 25px; margin:0;}
 
 
 /* Text list ***************************************************/
