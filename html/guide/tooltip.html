@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <meta http-equiv="X-UA-compatible" content="IE=edge, chrome=1" />
+    <title>Tooltip</title>
+    <script src="../../asset/js/jquery-3.6.0.min.js"></script>
+    <script src="../../asset/js/ui_plugins.js"></script>
+    <script src="../../asset/js/ui_common.js"></script>
+    <link rel="stylesheet" href="../../asset/css/common.css">
+
+<style>
+/******************************************************
+tooltip
+******************************************************/
+
+.ui-tooltip-wrap { display: inline-block; position: relative; }
+.ui-tooltip-wrap .toolTip { display: none; position: absolute; z-index: 200; margin-top: 23px; padding: 12px 30px 15px 15px; text-align: left; background-color: #424242; border-radius: 5px; box-shadow: 2px 6px 5px rgba(110,110,110,0.3); transition: opacity 0.3s ease-out; opacity: 0; }
+.ui-tooltip-wrap.active .toolTip { margin-top: 8px; opacity: 1; }
+.ui-tooltip-wrap .toolTip i { position: absolute; top: -8px; width: 20px; height: 9px; background: url(../images/img_info_edge.png) no-repeat; background-size: 100% auto; }
+.ui-tooltip-wrap .toolTip dt { margin-bottom: 3px; color: #fff; font-size: 14px; font-weight: 500; }
+.ui-tooltip-wrap .toolTip dd { position: relative;padding-left: 8px; color: #ccc; font-size: 12px; }
+.ui-tooltip-wrap .toolTip dd:before { content: '-'; position: absolute; left: 0; }
+.ui-tooltip-wrap .toolTip .typeModalClose { position: absolute; right: 0; top: 0; width: 30px; height: 29px; background: url(../images/ico_btn_info_close.png) no-repeat center center; background-size: auto 9px; }
+
+.ui-tooltip-wrap { position: static; }
+.ui-tooltip-wrap .toolTip { width: auto; left: 0;}
+.testLayout { width: 100%; margin: 0; padding: 50px 20px; }
+</style>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <h1 class="offscr">한국투자증권 토스 웹 발행어음거래</h1>
+            <p>한국투자증권에서 제공하는 서비스입니다</p>
+        </header>
+
+        <section id="container">
+            <div class="content">    
+                <div class="guide_cont">
+                    <div class="comp">
+                        <div style="display: flex; justify-content: space-between;">
+                            <div class="">좌측 컨텐츠</div>
+                            <div style="position: relative;"> <!-- 부모에 position 이 있어서 기준 점이 변경됨, 툴팁을 fixed 로 변경함 -->
+                                가나다라마바사
+                                <div class="ui-tooltip-wrap">
+                                    <button type="button" class="ui-btn typeInfo"><span class="hidden">설명 보기</span></button>
+                                    <div class="toolTip">
+                                        <i></i>
+                                        <dl>
+                                            <dt>웹 잠금번호 안내</dt>
+                                            <dd>6자리 숫자만으로 간편하게 로그인 할 수 있는<br>안전한 인증수단입니다. (브라우저당 1명만 이용가능)</dd>
+                                        </dl>
+                                        <button type="button" class="ui-btn typeModalClose"><span class="hidden">닫기</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <p>&nbsp;</p>
+                  
+                        <div style="position: relative;">
+                            <div style="position: absolute; right: 0;"> <!-- 부모에 position 이 있어서 기준 점이 변경됨, 툴팁을 fixed 로 변경함 -->
+                                가나다라마바사
+                                <div class="ui-tooltip-wrap">
+                                    <button type="button" class="ui-btn typeInfo"><span class="hidden">설명 보기</span></button>
+                                    <div class="toolTip">
+                                        <i></i>
+                                        <dl>
+                                            <dt>비밀번호 설정기준</dt>
+                                            <dd>영문 대문자, 영문 소문자, 숫자, 특수문자 중 3종 이상 조합한 8~15자리, 단 특수문자 필수 포함</dd>
+                                            <dd>주민등록번호, 전화번호, 아이디와 4자리 이상 순환, 역순으로 중복되거나 연속된 4개 이상의 문자, 숫자는 사용 불가</dd>
+                                        </dl>
+                                        <button type="button" class="ui-btn typeModalClose"><span class="hidden">닫기</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <p>&nbsp;</p>
+                  
+                        가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사
+                        <div class="ui-tooltip-wrap">
+                            <button type="button" class="ui-btn typeInfo"><span class="hidden">설명 보기</span></button>
+                            <div class="toolTip">
+                                <i></i>
+                                <dl>
+                                    <dt class="hidden">웹 잠금번호 안내</dt>
+                                    <dd>6자리 숫자만으로 간편하게 로그인 할 수 있는 안전한 인증수단입니다. (브라우저당 1명만 이용가능)</dd>
+                                </dl>
+                                <button type="button" class="ui-btn typeModalClose"><span class="hidden">닫기</span></button>
+                            </div>
+                        </div>
+                    
+                        <p>&nbsp;</p>
+                  
+                        가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사
+                        <div class="ui-tooltip-wrap">
+                            <button type="button" class="ui-btn typeInfo"><span class="hidden">설명 보기</span></button>
+                            <div class="toolTip">
+                                <i></i>
+                                <dl>
+                                    <dt class="hidden">웹 잠금번호 안내</dt>
+                                    <dd>6자리 숫자만으로 간편하게 로그인 할 수 있는 안전한 인증수단입니다. (브라우저당 1명만 이용가능)</dd>
+                                </dl>
+                                <button type="button" class="ui-btn typeModalClose"><span class="hidden">닫기</span></button>
+                            </div>
+                        </div>
+
+                        <script>
+                          $(document).ready(function() {
+                              $('.typeInfo').uiToolTip(); // $('#tooltipId2').uiToolTip() 개벌 실행도 가능
+                          });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>
+
