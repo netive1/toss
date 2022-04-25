@@ -10,21 +10,37 @@
     <script src="../asset/js/ui_plugins.js"></script>
     <script src="../asset/js/ui_common.js"></script>
     <link rel="stylesheet" href="../asset/css/contents.css">
+    <script>
+        $(function() {
+            $('.main_goods_slide').slick({
+                infinite: false,
+                slidesToShow: 1,
+                slidesToScroll: 2,
+                autoplaySpeed:3000,
+                speed:1000,
+                arrows: true,
+                dots:false
+            });
+        });
+    </script>
 </head>
 
 <body>
     <div id="wrap">
-
-        <header id="header">
-            <h1 class="offscr">한국투자증권 토스 웹 발행어음거래</h1>
-            <p>한국투자증권에서 제공하는 서비스입니다</p>
-        </header>
-
         <section id="container">
             <div class="content">
-                <h2 class="h2">타이틀2</h2>
-                <h3 class="h3">타이틀3</h3>
-                <h4 class="h4">타이틀4</h4>
+                <ul class="main_goods_slide">
+                    <li>
+                        <h1>더 많은 상품<br>거래하기</h1>
+                        <button type="button" class="btn">자세히보기</button>
+                    </li>
+                    <li>
+                        <h1>더 많은 상품<br>거래하기</h1>
+                        <button type="button" class="btn">자세히보기</button>
+                    </li>
+                </ul>
+
+
             </div>
         </section>
 
