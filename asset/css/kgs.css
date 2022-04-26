@@ -17,4 +17,8 @@
 .invest_tendency .invest_tendency_item.active::before {content: "내 투자성향"; position: absolute; width: 68px; height: 28px; left: 0px; top: -28px; background: #3B7AFE; box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.15);  border-radius: 4px; color: #fff; font-size: 12px; line-height: 30px;}
 .invest_tendency .invest_tendency_item.active::after {content: ""; position: absolute; width: 7px; height: 7px; background: #3B7AFE; left: 50%; top: -3px; transform: translateX(-50%) rotate(45deg);}
 
+.list_num > li::before {color:#666; background:#F1F1F1;}
+.guide_box.mt-40 {margin-top: 40px;}
+
+
 

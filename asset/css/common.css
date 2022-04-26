@@ -9,10 +9,10 @@
 .txt_c{text-align:center !important;}
 
 .point, .type1{color:#f32f2f !important;}
-.type1{color:#ef9a1b;}
-.type2{color:#3b7afe;}
-.type3{color:#5ec085;}
-.type4{color:#ef671b;}
+.type1{color:#ef9a1b !important;}
+.type2{color:#3b7afe !important;}
+.type3{color:#5ec085 !important;}
+.type4{color:#ef671b !important;}
 
 .tag{display:inline-block; min-width:57px; height:24px; line-height:1; padding:5px 11px; margin-left:7px; font-size:14px; color:#fff; font-weight:400; text-align:center; border-radius:12px; background:#5a6bff;}
 
@@ -155,20 +155,21 @@ table{width:100%; table-layout:fixed; border-spacing:0; margin-top:15px; border-
 .check_box input[type="checkbox"]:checked + label::before{background:#3b7afe;}
 
 
-.confirm_list{margin:0 20px; border-top:1px solid #222;}
-.confirm_list > li{padding:13px 0 12px; border-bottom:1px solid #eee;}
-.confirm_list > li:last-child{padding-bottom:15px;}
-.confirm_list .terms_item{display:flex; justify-content:space-between; align-items:center; padding:0 10px; line-height:23px;}
-.confirm_list .terms_item label{padding-left:22px; font-size:inherit;}
-.confirm_list .terms_item label::before{width:16px; height:12px; background:none; border-radius:0;}
-.confirm_list .terms_item label::after{left:0; width:16px; height:12px; background:url(../../asset/img/ico_check.png) 0 -24px no-repeat; background-size:16px 36px;}
-.confirm_list .terms_item input[type="checkbox"]:checked + label::before{background:transparent url(../../asset/img/ico_check.png) 0 -12px no-repeat; background-size:16px 36px;}
-.confirm_list .terms_item input[type="checkbox"]:checked + label::after{display:none;}
-.confirm_list .terms_cont{padding:15px 0 0 32px; line-height:23px;}
-.confirm_list .terms_cont .ico_star{margin-top:15px;}
-.confirm_list.t1 {margin:0; color:#222;}
-.confirm_list.t1 .terms_cont{padding-left:10px; padding-right:10px; color:#666;}
-
+.agree_list{margin:0 20px; border-top:1px solid #222;}
+.agree_list > .group{padding:13px 0 12px; border-bottom:1px solid #eee;}
+.agree_list > .group:last-child{padding-bottom:15px;}
+.agree_list .terms_item{display:flex; justify-content:space-between; align-items:center; padding:0 10px; line-height:23px;}
+.agree_list .terms_item label{padding-left:22px; font-size:inherit;}
+.agree_list .terms_item label::before{width:16px; height:12px; background:none; border-radius:0;}
+.agree_list .terms_item label::after{left:0; width:16px; height:12px; background:url(../../asset/img/ico_check.png) 0 -24px no-repeat; background-size:16px 36px;}
+.agree_list .terms_item input[type="checkbox"]:checked + label::before{background:transparent url(../../asset/img/ico_check.png) 0 -12px no-repeat; background-size:16px 36px;}
+.agree_list .terms_item input[type="checkbox"]:checked + label::after{display:none;}
+.agree_list .add_cont{padding:15px 0 0 32px; line-height:23px;}
+.agree_list .ico_star, .agree_list + .ico_star{margin-top:15px;}
+.agree_list.t1{margin:0;}
+.agree_list.t1 .group{padding:20px 0 20px;}
+.agree_list.t1 .add_cont{padding:15px 20px 0; color:#666;}
+.agree_list.t1 .dl_list{padding:0 20px; margin:0;}
 
 
 /* Text list ***************************************************/
