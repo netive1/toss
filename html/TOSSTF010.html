@@ -1,108 +1,76 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta charset="utf-8">
-    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
-    <meta name="format-detection" content="telephone=no">
-    <title>TOSSTF010_01</title>
-    <script src="../asset/js/jquery-3.6.0.min.js"></script>
-    <script src="../asset/js/ui_plugins.js"></script>
-    <script src="../asset/js/ui_common.js"></script>
-    <link rel="stylesheet" href="../asset/css/common.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>투자성향정보 만료</title>
+  
+  <script src="../asset/js/jquery-3.6.0.min.js"></script>
+  <script src="../asset/js/ui_plugins.js"></script>
+  <script src="../asset/js/ui_common.js"></script>
+  <link rel="stylesheet" href="../asset/css/contents.css">
 </head>
-
 <body>
-    <div id="wrap">
 
-        <section id="container">
-            <div class="content">
-                
-                <div class="governing">
-                    <h1 class="governing_tit">투자자정보 확인서 등록</h1>
-                </div>
+  <div class="dialog bottom show" data-modal="dialogBottom" role="dialog" aria-hidden="false" tabindex="0">
+    <div class="dialog_wrap">
+      <div class="dialog_header">
+        <h1>김한투 님의 <br>투자성향정보가 만료되었습니다</h1>
+        <p class="add_txt2">투자자정보확인서를다시등록할까요?</p>
+      </div>
+      <div class="dialog_content">
+        <div class="section">
+          <h2 class="h2">투자자정보제공및투자권유여부</h2>
+          <div class="invest_status">
+            <dl>
+              <dt>투자자 정보 제공</dt>
+              <dd class="type2">동의</dd>
+            </dl>
+            <dl>
+              <dt>투자권유</dt>
+              <dd class="type2">희망</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
 
-                <div class="comp">
-                    <div class="form_list">
-                        <div class="form_label">재등록 사유는 무엇인가요?</div>
-                        <div class="form_item bx">
-                            <div class="radio_box">
-                                <input type="radio" id="radioReason1" name="inpRadioR">
-                                <label for="radioReason1">미등록 항목 입력</label>
-                            </div>
-                        </div>
-                        <div class="form_item bx">
-                            <div class="radio_box">
-                                <input type="radio" id="radioReason2" name="inpRadioR">
-                                <label for="radioReason2">투자자 정보 변경</label>
-                            </div>
-                        </div>
-                        <div class="form_item bx">
-                            <div class="radio_box">
-                                <input type="radio" id="radioReason3" name="inpRadioR">
-                                <label for="radioReason3">착오 등록</label>
-                            </div>
-                        </div>
-                        <p class="add_txt">온라인에서 투자자 정보 변경은 당일 및 30일 이내 최대 3회까지만 변경 가능하오니 신중하게 등록하여 주시기 바랍니다.</p>
-                    </div>
-                    <div class="form_list">
-                        <div class="form_label">투자자정보를 제공하시겠어요?</div>
-                        <div class="form_group auto">
-                            <div class="form_item bx">
-                                <div class="radio_box">
-                                    <input type="radio" id="radioY1" name="inpRadio1">
-                                    <label for="radioY1">네</label>
-                                </div>
-                            </div>
-                            <div class="form_item bx">
-                                <div class="radio_box">
-                                    <input type="radio" id="radioN1" name="inpRadio1">
-                                    <label for="radioN1">아니오</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form_list">
-                        <div class="form_label">투자권유를 희망하시나요?</div>
-                        <div class="form_group auto">
-                            <div class="form_item bx">
-                                <div class="radio_box">
-                                    <input type="radio" id="radioY2" name="inpRadio2">
-                                    <label for="radioY2">네</label>
-                                </div>
-                            </div>
-                            <div class="form_item bx">
-                                <div class="radio_box">
-                                    <input type="radio" id="radioN2" name="inpRadio2">
-                                    <label for="radioN2">아니오</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                
-                <div class="comp">
-                    <div class="guide_box">
-                        <strong>투자자정보 작성 시 유의사항</strong>
-                        <ul class="list_dot">
-                            <li>고객님께서 투자권유를 희망하지 않는 경우 회사는 적합성원칙 및 설명의무를 부담하지 않으며, 고객님께 투자권유를 할 수 없습니다.
-                                <ul class="list_bar">
-                                    <li><span>적합성원칙</span> 고객의재산상황,금융상품,취득처분경험 등 정보를파악하고,고객에게 부적합한 금융상품의 계약체결 권유금지</li>
-                                    <li><span>설명의무</span> 금융상품의 중요사항을 소비자가 이해할 수 있도록 설명</li>
-                                </ul>
-                            </li>
-                            <li>이 정보는 향후 분쟁 또는 소송이 발생한 경우, 고객의 권리 구제에 불리하게 사용될 수 있으므로 신중하게 작성할 필요가 있습니다.</li>
-                        </ul>
-                    </div>
-                </div>
+      <hr class="hr">
 
-                <div class="fixed_btm_btns t1">
-                    <button type="button" class="btn second">취소</button>
-                    <button type="button" class="btn primary">다음</button>
-                </div>
+      <div class="dialog_content">
+        <div class="section">
+          <h2 class="h1">김한투 고객님의 투자성향은  <span class="type2">안정형</span>입니다.</h2>
+
+          <div class="invest_tendency">
+            <div class="invest_tendency_item active">
+              <p>안정형</p>
             </div>
-        </section>
+            <div class="invest_tendency_item">
+              <p>안정<br> 추구형</p>
+            </div>
+            <div class="invest_tendency_item">
+              <p>위험<br> 중립형</p>
+            </div>
+            <div class="invest_tendency_item">
+              <p>적극<br> 투자형</p>
+            </div>
+            <div class="invest_tendency_item">
+              <p>공격<br> 투자형</p>
+            </div>
+          </div>
+          
+          <p class="lh-24">투자원금 보존보다는 투자수익을 보다 추구하므로 고수익 상품에 투자하고자 하는 성향입니다. 따라서, 당사 금융투자상품별 위험도 분류기준상 초저위험에 해당하는 상품을 권해 드립니다.</p>
+        </div>
+      </div>
 
+      <div class="dialog_footer">                
+        <div class="dialog_btn_wrap">
+          <button type="button" class="btn second dialog_close">다시 등록하기</button>
+          <button type="button" class="btn primary dialog_close">기존 정보와 동일</button>
+        </div>
+      </div>
     </div>
+  </div>
+  
 </body>
+</html>
