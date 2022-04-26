@@ -121,8 +121,9 @@ table{width:100%; table-layout:fixed; border-spacing:0; margin-top:15px; border-
 
 /* Form ***************************************************/
 .form_list:not(:last-child){margin-bottom:40px;}  /* padding:0 20px; */
-.form_list .form_item{margin-bottom:5px;}
-.form_label{display:inline-block; margin-bottom:15px; line-height:27px; color:#222; font-size:16px; font-weight:500;}
+.form_list > .form_item{margin-bottom:10px;}
+.form_list > .form_item:last-of-type{margin-bottom:15px;}
+.form_label{margin-bottom:15px; line-height:27px; color:#222; font-size:16px; font-weight:500;}
 .form_info{display:flex; justify-content:space-between; align-items:center; margin-bottom:13px;}
 .form_info .form_label{margin-bottom:0;}
 
@@ -131,8 +132,10 @@ table{width:100%; table-layout:fixed; border-spacing:0; margin-top:15px; border-
 .form_group.auto{display:inline-flex;}
 .form_group .form_item:not(:first-child){margin-left:8px;}
 .form_group .form_item.bx{width:100%;}
+.form_group .form_item.bx .radio_box label{padding-left:0; text-align:center;}
 
-.form_item.bx .radio_box label{display:block; min-width:100px; min-height:50px; padding:17px 0; text-align:center; line-height:1; color:#666; font-weight:400; border-radius:6px; box-shadow:1px 2px 8px 0 rgb(0 0 0 / 10%);}
+
+.form_item.bx .radio_box label{display:block; min-width:100px; min-height:50px; padding:17px 0 17px 20px; line-height:1; color:#666; font-weight:400; border-radius:6px; box-shadow:1px 2px 8px 0 rgb(0 0 0 / 10%);}
 .form_item.bx .radio_box label::before, 
 .form_item.bx .radio_box label::after{display:none;}
 .form_item.bx .radio_box input[type="radio"]:checked + label{font-weight:500; outline:1px solid #3b7afe;}
@@ -210,7 +213,7 @@ table{width:100%; table-layout:fixed; border-spacing:0; margin-top:15px; border-
 
 
 /* Governing title ***************************************************/
-.governing{position:relative; padding:0 20px; margin-bottom:35px; text-align:left;}
+.governing{position:relative; padding:0 20px; margin-bottom:38px; text-align:left;}
 .governing .governing_tit{margin-bottom:0;}
 .governing.pw{line-height:26px; text-align:center;}
 .governing.pw .governing_tit::before{content:''; display:block; width:124px; height:24px; background:url(../../asset/img/logo_hh.png) no-repeat; background-size:124px 24px;}
@@ -222,6 +225,7 @@ table{width:100%; table-layout:fixed; border-spacing:0; margin-top:15px; border-
 .governing.fail .governing_tit::after{left:50%; top:-55px; width:3px; height:25px;}
 .governing.fail .governing_tit::before{transform:translateX(-50%) rotate(45deg);}
 .governing.fail .governing_tit::after{transform:translateX(-50%) rotate(-45deg);}
+.governing.fail .add_txt{margin-top:5px;}
 .governing.complete .governing_tit::before,
 .governing.complete .governing_tit::after{transform:translateX(-50%) rotate(45deg);}
 .governing.complete .governing_tit::before{width:13px; height:3px; top:-42px; left:85px;;}
@@ -231,11 +235,11 @@ table{width:100%; table-layout:fixed; border-spacing:0; margin-top:15px; border-
 
 .governing_tit{position:relative; display:inline-block; margin-bottom:15px; font-size:22px; font-weight:600; color:#222; line-height:37px;}
 
-[class^="add_txt"]{margin-top:5px; line-height:23px; word-break:keep-all;}
+[class^="add_txt"]{margin-top:10px; line-height:23px; word-break:keep-all;}
 [class^="add_txt"]:first-child{margin-top:12px;}
 .add_txt + .add_txt{margin-top:15px;}
 .add_txt1{color:#f32f2f;}
-.add_txt2{margin-top:10px; color:#3b7afe;}
+.add_txt2{color:#3b7afe;}
 
 /* Main ***************************************************/
 .main_visual{position:relative; padding:80px 0 104px; background:#4e87fe url(../../asset/img/main_logo.png) right 18px top 25px no-repeat; background-size:158px 16px;}

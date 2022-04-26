@@ -63,7 +63,6 @@ const fn = {
 				$td.eq(7).addClass('tc worker');
 				$td.eq(8).addClass('tc');
 				$td.eq(9).addClass('tc end');
-				$td.eq(11).addClass('tc');
 			}
 		});
 
