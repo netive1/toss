@@ -98,3 +98,19 @@
 .stick_wrap .stick_cont.type1 .group1.check .item2 p.p2 {display: block; position: absolute; top: -55px; left: 0; display: block; font-size: 13px; color: #222; font-weight: 500;}
 .stick_wrap .stick_cont.type1 .group1.check .item2 p {width: 100%; text-align: center;}
 .stick_wrap .stick_cont.type1 .group1.check .item2 span {position: relative; font-weight: 500; color: #f32f2f;}
+
+
+
+.check_box.mt40 {margin-top: 40px;}
+
+.col_stick_wrap {margin: 25px auto 40px; display: flex; justify-content: space-between; align-items: center; flex-direction: column;}
+.col_stick_wrap .item {position: relative; padding: 20px 0; width: 130px; border-top: 1px solid #eee; border-left: 1px solid #eee; border-right: 1px solid #eee; text-align: center; text-align: center;}
+.col_stick_wrap .item:first-child {border-top-left-radius: 6px; border-top-right-radius: 6px;}
+.col_stick_wrap .item:last-child {border-bottom-left-radius: 6px; border-bottom-right-radius: 6px; border-bottom: 1px solid #eee;}
+.col_stick_wrap .item span {display: block; font-size: 14px;}
+.col_stick_wrap .item span strong, .col_stick_wrap .item span span {display: block; padding-top: 6px; font-size: 16px;} 
+.col_stick_wrap .item.active {background: #f9f9f9;}
+.col_stick_wrap .item.tip1::before {content: '상품의 위험등급'; position: absolute; bottom: 7px; right: -103px; padding: 7px 10px; font-size: 14px; line-height: 24px; color: #fff; font-weight: 700; background: #F32F2F; border-radius: 6px; box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.15);}
+.col_stick_wrap .item.tip1::after {content: ''; position: absolute; bottom: 37px; right: 0; width: 0px; height: 0px; border-left: 7px solid transparent; border-right: 7px solid transparent; border-top: 8px solid #F32F2F;}
+.col_stick_wrap .item.tip2::before {content: '나의 투자성향'; position: absolute; bottom: 7px; left: -88px; padding: 7px 10px; font-size: 14px; line-height: 24px; color: #fff; font-weight: 700; background: #EF9A1B; border-radius: 6px; box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.15);}
+.col_stick_wrap .item.tip2::after {content: ''; position: absolute; bottom: 37px; left: 0; width: 0px; height: 0px; border-left: 7px solid transparent; border-right: 7px solid transparent; border-top: 8px solid #EF9A1B;}
