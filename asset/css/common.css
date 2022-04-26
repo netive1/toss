@@ -65,10 +65,10 @@ table .col2{width:100px;}
 table .col3{width:120px;}
 table .col4{width:140px;}
 
-.tbl_info{display:flex; align-items:flex-end; margin-top:25px;}
-.tbl_info .check_box label{color:#222; font-weight:500;}
-.tbl_info .opt{margin-left:auto; margin-right:0; line-height:inherit;}
-.tbl_info .h2{margin-bottom:0;}
+.info_box{display:flex; align-items:flex-end; margin-top:25px; margin-bottom:15px;}
+.info_box .check_box label{color:#222; font-weight:500;}
+.info_box .opt{margin-left:auto; margin-right:0; line-height:inherit;}
+.info_box .h2{margin-bottom:0;}
 
 table{width:100%; table-layout:fixed; border-spacing:0; margin-top:15px; border-top:1px solid #222; border-bottom:1px solid #eee;}
 .tbl_row tbody th{padding:5px 0 5px 20px; text-align:left; font-weight:400; color:#222; background:#fff;}
@@ -158,6 +158,7 @@ table{width:100%; table-layout:fixed; border-spacing:0; margin-top:15px; border-
 .limit_txt{margin-top:15px; text-align:right; line-height:23px;}
 .limit_txt strong{font-weight:400;}
 
+.check_box.all input[type="checkbox"]:checked + label{font-weight:600;}
 .check_box label{position:relative; display:inline-block; padding-left:40px; line-height:27px; font-size:16px; color:#666;}
 .check_box label::before{content:''; position:absolute; left:0; top:50%; transform:translateY(-50%); display:inline-block; width:30px; height:30px; background:#eee; border-radius:6px;}
 .check_box label::after{content:''; display:block; position:absolute; left:7px; top:50%; transform:translateY(-50%); width:16px; height:12px; background:url(../../asset/img/ico_check.png) no-repeat; background-size:16px 36px; animation:fadeIn .1s cubic-bezier(.4,.0,.23,1) forwards;}
@@ -169,17 +170,17 @@ table{width:100%; table-layout:fixed; border-spacing:0; margin-top:15px; border-
 .agree_list > .group{padding:13px 0 12px; border-bottom:1px solid #eee;}
 .agree_list > .group:last-child{padding-bottom:15px;}
 .agree_list .terms_item{display:flex; justify-content:space-between; align-items:center; padding:0 10px; line-height:23px;}
-.agree_list .terms_item label{padding-left:22px; font-size:inherit;}
+.agree_list .terms_item label{padding-left:22px; color:#222; font-size:inherit;}
 .agree_list .terms_item label::before{width:16px; height:12px; background:none; border-radius:0;}
 .agree_list .terms_item label::after{left:0; width:16px; height:12px; background:url(../../asset/img/ico_check.png) 0 -24px no-repeat; background-size:16px 36px;}
 .agree_list .terms_item input[type="checkbox"]:checked + label::before{background:transparent url(../../asset/img/ico_check.png) 0 -12px no-repeat; background-size:16px 36px;}
 .agree_list .terms_item input[type="checkbox"]:checked + label::after{display:none;}
 .agree_list .add_cont{padding:15px 0 0 32px; line-height:23px;}
 .agree_list .ico_star, .agree_list + .ico_star{margin-top:15px;}
-/* .agree_list.t1{margin:0;}
+.agree_list.t1{margin:0;}
 .agree_list.t1 .group{padding:20px 0 20px;}
 .agree_list.t1 .add_cont{padding:15px 20px 0; color:#666;}
-.agree_list.t1 .dl_list{padding:0 20px; margin:0;} */
+.agree_list.t1 .dl_list{padding:0 20px; margin:0;}
 
 
 /* Text list ***************************************************/
