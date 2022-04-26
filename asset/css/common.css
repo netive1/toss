@@ -18,9 +18,9 @@
 
 
 /* Guide ***************************************************/
-.guide_cont > h1{position:relative; padding:0 0 12px 20px; margin-bottom:20px; font-size:20px; color:#5e5e5e; font-weight:500;}
-.guide_cont > h1 > span{padding-bottom:5px; border-bottom:2px solid #999;}
-.guide_cont > h1::before{content:''; position:absolute; left:20px; bottom:0; display:block; width:calc(100% - 40px); height:1px; background:#999;}
+.guide_cont h1.txt{position:relative; padding:0 0 12px; margin-bottom:20px; font-size:20px; color:#5e5e5e; font-weight:500;}
+.guide_cont h1.txt > span{padding-bottom:5px; border-bottom:2px solid #999;}
+.guide_cont h1.txt::before{content:''; position:absolute; left:0; bottom:0; display:block; width:100%; height:1px; background:#999;}
 /* .guide_cont > h2:not(:first-of-type){margin-top:50px;} */
 
 
@@ -49,9 +49,9 @@
 
 
 /* Title ***************************************************/
-.h1{position:relative; font-size:22px; font-weight:500; line-height:27px; margin:30px 0 15px 0;}
+.h1{position:relative; font-size:22px; font-weight:600; line-height:37px; margin:30px 0 15px 0;}
 .h1:first-of-type{margin-top:0;}
-.h2{position:relative; font-size:16px; font-weight:500; line-height:25px; margin:30px 0 15px 0;}
+.h2{position:relative; font-size:16px; font-weight:500; line-height:27px; margin:30px 0 15px 0;}
 .h2:first-child{margin-top:0;}
 .h2.mark{padding-left:25px;}
 .h2.mark::before{content:''; position:absolute; left:0; top:4px; width:18px; height:18px; background:url(../../asset/img/ico_mark.png) no-repeat; background-size:18px;}
@@ -120,8 +120,9 @@ table{width:100%; table-layout:fixed; border-spacing:0; margin-top:15px; border-
 .tab-panel .ui-tab{margin-top:30px;}
 
 /* Form ***************************************************/
-.form_list{padding:0 20px; margin-bottom:40px;}
-.form_label{display:inline-block; margin-bottom:15px; color:#222; font-size:16px; font-weight:500;}
+.form_list:not(:last-child){margin-bottom:40px;}  /* padding:0 20px; */
+.form_list .form_item{margin-bottom:5px;}
+.form_label{display:inline-block; margin-bottom:15px; line-height:27px; color:#222; font-size:16px; font-weight:500;}
 .form_info{display:flex; justify-content:space-between; align-items:center; margin-bottom:13px;}
 .form_info .form_label{margin-bottom:0;}
 
@@ -155,7 +156,7 @@ table{width:100%; table-layout:fixed; border-spacing:0; margin-top:15px; border-
 .check_box input[type="checkbox"]:checked + label::before{background:#3b7afe;}
 
 
-.agree_list{margin:0 20px; border-top:1px solid #222;}
+.agree_list{border-top:1px solid #222;}
 .agree_list > .group{padding:13px 0 12px; border-bottom:1px solid #eee;}
 .agree_list > .group:last-child{padding-bottom:15px;}
 .agree_list .terms_item{display:flex; justify-content:space-between; align-items:center; padding:0 10px; line-height:23px;}
@@ -209,9 +210,9 @@ table{width:100%; table-layout:fixed; border-spacing:0; margin-top:15px; border-
 
 
 /* Governing title ***************************************************/
-.governing{position:relative; margin-bottom:35px; text-align:left;}
+.governing{position:relative; padding:0 20px; margin-bottom:35px; text-align:left;}
+.governing .governing_tit{margin-bottom:0;}
 .governing.pw{line-height:26px; text-align:center;}
-.governing.pw .governing_tit{position:relative;}
 .governing.pw .governing_tit::before{content:''; display:block; width:124px; height:24px; background:url(../../asset/img/logo_hh.png) no-repeat; background-size:124px 24px;}
 .governing.ico{padding-top:70px; text-align:center;}
 .governing.ico .governing_tit::before,
@@ -228,10 +229,11 @@ table{width:100%; table-layout:fixed; border-spacing:0; margin-top:15px; border-
 .governing.fail::before{background:#ddd;}
 .governing.complete::before{background:#3b7afe;}
 
-.governing_tit{position:relative; display:inline-block; font-size:22px; font-weight:600; color:#222; line-height:37px;}
+.governing_tit{position:relative; display:inline-block; margin-bottom:15px; font-size:22px; font-weight:600; color:#222; line-height:37px;}
 
 [class^="add_txt"]{margin-top:5px; line-height:23px; word-break:keep-all;}
 [class^="add_txt"]:first-child{margin-top:12px;}
+.add_txt + .add_txt{margin-top:15px;}
 .add_txt1{color:#f32f2f;}
 .add_txt2{margin-top:10px; color:#3b7afe;}
 
@@ -277,7 +279,7 @@ table{width:100%; table-layout:fixed; border-spacing:0; margin-top:15px; border-
 
 
 /* Container ***************************************************/
-.content{padding:40px 0 110px;}
+.content{padding:40px 0 70px;}
 /* .content{padding:55px 20px 65px;} */
 
 .hr{display:block; width:100%; height:12px; margin-bottom:40px; border:0; background:#f0f0f0;}
@@ -372,7 +374,7 @@ html.dialog_active{overflow:hidden; height:100%; -webkit-overflow-scrolling:none
 .dialog_wrap .dialog_header h1{font-size:22px; font-weight:600; line-height:37px; word-break:keep-all;}
 .dialog_wrap .dialog_content{padding:0 20px 40px; line-height:23px; background:#fff;}
 .dialog_wrap .dialog_content .section{overflow-y:auto; word-break:keep-all;}
-.dialog_btn_wrap > .btn{height:60px; color:#3b7afe; border:0; border-top:1px solid rgb(238 238 238); border-radius:0;}
+/* .dialog_btn_wrap > .btn{height:60px; border:0; border-top:1px solid rgb(238 238 238); border-radius:0;}  */
 
 
 .dialog.bottom{animation:none; left:0; background:rgba(0,0,0,.4);transition:all 0.65s cubic-bezier(0.22,0.61,0.2,1);}
