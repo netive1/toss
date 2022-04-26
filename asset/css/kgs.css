@@ -1,8 +1,5 @@
 @charset "utf-8";
 
-.btn {font-size: 18px !important;}
-.btn.second{color:#888 ; background:#eee; height: 70px;}
-.btn.primary {height: 70px;}
 
 .dialog.modal .dialog_wrap .h1{font-size:22px; font-weight:600; line-height:37px; word-break:keep-all;}
 .dialog.modal .dialog_header h1 {line-height: 27px; letter-spacing: -.5px;}

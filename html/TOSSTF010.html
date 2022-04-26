@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
     <meta name="format-detection" content="telephone=no">
-    <title>TOSSTF011</title>
+    <title>TOSSTF010_01</title>
     <script src="../asset/js/jquery-3.6.0.min.js"></script>
     <script src="../asset/js/ui_plugins.js"></script>
     <script src="../asset/js/ui_common.js"></script>
@@ -18,36 +18,88 @@
         <section id="container">
             <div class="content">
                 
-                <div class="comp">
-                    <h1 class="governing_tit">FATCA/MCAA 본인확인 등록안내</h1>
-                    <p class="add_txt">고객님은 [정기 금융정보 자동교환을 위한 조세조약이행규정]에 따라 본인확인(자가증명)을 등록하셔야합니다.</p>
-                    <p class="add_txt">홈페이지 또는 HTS에서 본인확인(자가증명)을 등록하시거나, 가까운 한국투자증권 지점에 방문해주시기바랍니다.</p>
-                    <p class="add_txt">아래 기한 까지 본인확인(자가증명)과 관련하여 요청된 모든 정보가 제공되지 않을 경우 관련 법에 의해 고객님의 인적사항 및 계좌 관련 정보가 국세청에 보고 될 수 있습니다.</p>
+                <div class="governing">
+                    <h1 class="governing_tit">투자자정보 확인서 등록</h1>
                 </div>
 
                 <div class="comp">
-                    <h2 class="h2">본인확인(자가증명)완료시한</h2> 
-                    <div class="agree_list t1">
-                        <div class="group">
-                            <dl class="dl_list">
-                                <dt>FATCA</dt>
-                                <dd><strong class="point">2022.05.01</strong></dd>
-                            </dl>
+                    <div class="form_list">
+                        <div class="form_label">재등록 사유는 무엇인가요?</div>
+                        <div class="form_item bx">
+                            <div class="radio_box">
+                                <input type="radio" id="radioReason1" name="inpRadioR">
+                                <label for="radioReason1">미등록 항목 입력</label>
+                            </div>
                         </div>
-                        <div class="group">
-                            <dl class="dl_list">
-                                <dt>MCAA</dt>
-                                <dd><strong class="point">2022.05.01</strong></dd>
-                            </dl>
+                        <div class="form_item bx">
+                            <div class="radio_box">
+                                <input type="radio" id="radioReason2" name="inpRadioR">
+                                <label for="radioReason2">투자자 정보 변경</label>
+                            </div>
+                        </div>
+                        <div class="form_item bx">
+                            <div class="radio_box">
+                                <input type="radio" id="radioReason3" name="inpRadioR">
+                                <label for="radioReason3">착오 등록</label>
+                            </div>
+                        </div>
+                        <p class="add_txt">온라인에서 투자자 정보 변경은 당일 및 30일 이내 최대 3회까지만 변경 가능하오니 신중하게 등록하여 주시기 바랍니다.</p>
+                    </div>
+                    <div class="form_list">
+                        <div class="form_label">투자자정보를 제공하시겠어요?</div>
+                        <div class="form_group auto">
+                            <div class="form_item bx">
+                                <div class="radio_box">
+                                    <input type="radio" id="radioY1" name="inpRadio1">
+                                    <label for="radioY1">네</label>
+                                </div>
+                            </div>
+                            <div class="form_item bx">
+                                <div class="radio_box">
+                                    <input type="radio" id="radioN1" name="inpRadio1">
+                                    <label for="radioN1">아니오</label>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <p class="ico_star">본인확인(자가증명) 등록은 홈페이지 또는 HTS 로그인 시 본인확인(FATCA)등록안내 팝업에서 확인 가능합니다.</p>
-                   
+                    <div class="form_list">
+                        <div class="form_label">투자권유를 희망하시나요?</div>
+                        <div class="form_group auto">
+                            <div class="form_item bx">
+                                <div class="radio_box">
+                                    <input type="radio" id="radioY2" name="inpRadio2">
+                                    <label for="radioY2">네</label>
+                                </div>
+                            </div>
+                            <div class="form_item bx">
+                                <div class="radio_box">
+                                    <input type="radio" id="radioN2" name="inpRadio2">
+                                    <label for="radioN2">아니오</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="comp">
+                    <div class="guide_box">
+                        <strong>투자자정보 작성 시 유의사항</strong>
+                        <ul class="list_dot">
+                            <li>고객님께서 투자권유를 희망하지 않는 경우 회사는 적합성원칙 및 설명의무를 부담하지 않으며, 고객님께 투자권유를 할 수 없습니다.
+                                <ul class="list_bar">
+                                    <li><span>적합성원칙</span> 고객의재산상황,금융상품,취득처분경험 등 정보를파악하고,고객에게 부적합한 금융상품의 계약체결 권유금지</li>
+                                    <li><span>설명의무</span> 금융상품의 중요사항을 소비자가 이해할 수 있도록 설명</li>
+                                </ul>
+                            </li>
+                            <li>이 정보는 향후 분쟁 또는 소송이 발생한 경우, 고객의 권리 구제에 불리하게 사용될 수 있으므로 신중하게 작성할 필요가 있습니다.</li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="fixed_btm_btns">
-                    <button type="button" class="btn second">7일간 보지않기</button>
-                    <button type="button" class="btn primary">확인</button>
+                <div class="fixed_btm_btns t1">
+                    <button type="button" class="btn second">취소</button>
+                    <button type="button" class="btn primary">다음</button>
                 </div>
             </div>
         </section>
