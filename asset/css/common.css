@@ -68,18 +68,24 @@ table .col4{width:140px;}
 .tbl_info{display:flex; align-items:flex-end; margin-top:25px;}
 .tbl_info .check_box label{color:#222; font-weight:500;}
 .tbl_info .opt{margin-left:auto; margin-right:0; line-height:inherit;}
-.tbl_info .h3{margin-bottom:0;}
+.tbl_info .h2{margin-bottom:0;}
 
 table{width:100%; table-layout:fixed; border-spacing:0; margin-top:15px; border-top:1px solid #222; border-bottom:1px solid #eee;}
 .tbl_row tbody th{padding:5px 0 5px 20px; text-align:left; font-weight:400; color:#222; background:#fff;}
 .tbl_row tbody td{padding:5px 20px 5px; text-align:right; color:#666; line-height:23px;}
 .tbl_row tbody td strong:not(.point){color:#222;}
-.tbl_row tbody tr:first-child th, 
-.tbl_row tbody tr:first-child td{padding-top:15px;}
+.tbl_row:not(.line) tbody tr:first-child th, 
+.tbl_row:not(.line) tbody tr:first-child td{padding-top:15px;}
 .tbl_row tbody tr:last-child th, 
 .tbl_row tbody tr:last-child td{padding-bottom:15px;}
 .tbl_row tbody tr.pay th{color:#000;}
 .tbl_row tbody tr.pay td{font-weight:500; color:#000;}
+
+.tbl_row.line tbody th,
+.tbl_row.line tbody td{padding:15px 0 16px; border-top:1px solid #eee;}
+.tbl_row.line tbody th{padding-left:20px;}
+.tbl_row.line tbody td{padding-right:20px;}
+
 
 /* table 가로 스크롤 */
 .horizon_scrollbar{position:relative; overflow-x:auto;} 
@@ -170,10 +176,10 @@ table{width:100%; table-layout:fixed; border-spacing:0; margin-top:15px; border-
 .agree_list .terms_item input[type="checkbox"]:checked + label::after{display:none;}
 .agree_list .add_cont{padding:15px 0 0 32px; line-height:23px;}
 .agree_list .ico_star, .agree_list + .ico_star{margin-top:15px;}
-.agree_list.t1{margin:0;}
+/* .agree_list.t1{margin:0;}
 .agree_list.t1 .group{padding:20px 0 20px;}
 .agree_list.t1 .add_cont{padding:15px 20px 0; color:#666;}
-.agree_list.t1 .dl_list{padding:0 20px; margin:0;}
+.agree_list.t1 .dl_list{padding:0 20px; margin:0;} */
 
 
 /* Text list ***************************************************/
