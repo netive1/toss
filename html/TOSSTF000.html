@@ -12,24 +12,7 @@
     <link rel="stylesheet" href="../asset/css/contents.css">
     <script>
         $(function() {
-
-            var $slickSlider = $('.goods_list');
-            $slickSlider.on('init reInit afterChange', function (event, slick, currentSlide) {
-                var i = (currentSlide ? currentSlide : 0) + 1;
-                $('.slide_num').html('<span>'+i+'</span>'+ (slick.$dots[0].children.length));
-            });
-                
-            $slickSlider.slick({
-                infinite: true,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                autoplaySpeed:3000,
-                speed:1000,
-                autoplay: true,
-                arrows: false,
-                dots:true
-            });
-            
+            fn.slider('.goods_slider', true);
         });
     </script>
 </head>
@@ -39,7 +22,7 @@
         <section id="container">
 
             <div class="main_visual">
-                <ul class="goods_list">
+                <ul class="goods_slider">
                     <li>
                         <h1>
                             <p>채권, RP 등</p>

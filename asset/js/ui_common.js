@@ -4,7 +4,8 @@ $(function() {
   fn.hrefReset();
   fn.tab();
   fn.popup.init();
-
+  fn.slider();
+  fn.agreeCheck();
 });
 
 
@@ -147,6 +148,64 @@ const fn = {
         o.hideModal();
       });
     }
+  },
+  slider : function(target, autoCheck) {
+    var $slickSlider = $(target);
+    $slickSlider.on('init reInit afterChange', function (event, slick, currentSlide) {
+        var i = (currentSlide ? currentSlide : 0) + 1;
+        $('.slide_num').html('<span>'+i+'</span>'+ (slick.$dots[0].children.length));
+    });
+        
+    $slickSlider.slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplaySpeed:3000,
+        speed:1000,
+        autoplay: autoCheck,
+        arrows: false,
+        dots:true
+    });
+  },
+  agreeCheck : function() {
+    var $input = $('.agree_list input[name="inpCheckAgree"]');
+
+    function event() {
+      $(document).on('change', 'input[name="allCheck"]', function() {
+        var $this = $(this);
+        inpAllCheck($this);
+      });
+
+      $('input[name="inpCheckAgree"]').on('change', function() {
+        var inp_length = $('input[name="inpCheckAgree"]').length;
+        var check_list = [];
+
+        $('input[name="inpCheckAgree"]:checked').each(function() {
+          var chkIndex = $(this).index();
+
+          check_list.push(chkIndex);   
+        });
+
+        if (check_list.length === inp_length) {
+            $('input[name="allCheck"]').prop('checked', true);
+        } else {
+            $('input[name="allCheck"]').prop('checked', false);
+        }       
+      });
+    }
+
+    // 전체체크 
+    function inpAllCheck(_this) {
+      if(!!_this.is(':checked')) {
+        $input.prop('checked', true);
+      } else {
+        $input.prop('checked', false);
+      }
+    }
+  
+
+    event();
+
   }
 }
 

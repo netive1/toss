@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <meta name="format-detection" content="telephone=no">
+    <title>TOSSTF025</title>
+    <script src="../asset/js/jquery-3.6.0.min.js"></script>
+    <script src="../asset/js/ui_plugins.js"></script>
+    <script src="../asset/js/ui_common.js"></script>
+    <link rel="stylesheet" href="../asset/css/common.css">
+</head>
+
+<body>
+    <div id="wrap">
+
+        <section id="container">
+            <div class="content">
+
+                <button type="button" class="btn sm t4" onclick="fn.popup.init(this,  '#dialogAlert');">알럿 팝업</button>
+
+                <div class="dialog alert" id="dialogAlert">
+                    <div class="dialog_wrap">
+                        <div class="dialog_header">
+                            <h1>매수금액을 다시 입력해주세요</h1>
+                        </div>
+                        <div class="dialog_content">
+                            <div class="section">
+                                <p>최소매수금액은1,000,000원입니다.</p>
+                            </div>
+                        </div>
+                        <div class="dialog_footer">                
+                            <div class="dialog_btn_wrap">
+                                <button type="button" class="btn dialog_close">확인</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
