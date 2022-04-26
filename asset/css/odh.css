@@ -114,3 +114,29 @@
 .col_stick_wrap .item.tip1::after {content: ''; position: absolute; bottom: 37px; right: 0; width: 0px; height: 0px; border-left: 7px solid transparent; border-right: 7px solid transparent; border-top: 8px solid #F32F2F;}
 .col_stick_wrap .item.tip2::before {content: '나의 투자성향'; position: absolute; bottom: 7px; left: -88px; padding: 7px 10px; font-size: 14px; line-height: 24px; color: #fff; font-weight: 700; background: #EF9A1B; border-radius: 6px; box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.15);}
 .col_stick_wrap .item.tip2::after {content: ''; position: absolute; bottom: 37px; left: 0; width: 0px; height: 0px; border-left: 7px solid transparent; border-right: 7px solid transparent; border-top: 8px solid #EF9A1B;}
+
+.card_info {padding: 40px 20px 30px; background: #5A6BFF; color: #fff;}
+.card_info .txt_info p {margin-bottom: 12px; font-size: 14px;}
+.card_info .txt_info strong {font-size: 22px; font-weight: 700;}
+.card_info .txt_info button.re_btn {display: inline-block; padding-left: 8px; width: 24px; height: 24px; background-image: url(../../asset/img/ico_refresh.png); background-size: 24px 24px; background-repeat: no-repeat; vertical-align: top;}
+.card_info .txt_info button.re_btn span {display: none;}
+.card_info .tbl_info {margin-top: 30px;}
+.card_info .tbl_info dl {display: flex; padding: 10px 0; width: 100%; justify-content: space-between; align-items: center;}
+.card_info .tbl_info dt {font-size: 14px; font-weight: 400;}
+.card_info .tbl_info dd {font-size: 16px; font-weight: 500;}
+.card_info .link_btn {margin-top: 30px; display: flex; justify-content: space-between; align-items: center;}
+.card_info .link_btn a.a_btn {display: block; padding: 20px 20px; width: calc(50% - 11px); color: #fff; border-radius: 10px; background: #5263FA;}
+.card_info .link_btn a.a_btn strong {position: relative; display: inline-block; margin-top: 8px; color: #fff;}
+.card_info .link_btn a.a_btn strong::after {content: ''; position: absolute; top: 3px; right: -10px; width: 5px; height: 8px; background: url(../../asset/img/ico_arrow_s_w.png); background-size: 5px 8px;}
+
+.info_list_wrap .list {padding: 10px 20px 25px; border-bottom: 1px solid #eee;}
+.info_list_wrap .list dl {display: flex; padding: 0; width: 100%; justify-content: space-between; align-items: center;}
+.info_list_wrap .list dl dt {font-size: 16px; font-weight: 400; line-height: 28px; color: #222;}
+.info_list_wrap .list dl dd {font-size: 16px; font-weight: 500; line-height: 28px;}
+.info_list_wrap .list dl dd span {padding-right: 4px;}
+.info_list_wrap .list dl:last-child {margin-top: 8px;}
+.info_list_wrap .list dl:last-child dt, .info_list_wrap .list dl:last-child dd {font-size: 13px; font-weight: 400; line-height: 20px; color: #666;}
+
+.empty_wrap {margin-top: 40px;}
+.empty_wrap p {position: relative; padding-top: 125px; font-size: 16px; font-weight: 400; line-height: 28px; text-align: center;}
+.empty_wrap p:before {content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 130px; height: 110px; background: url(../../asset/img/bg_nodata.png); background-size: 130px 110px;}
