@@ -18,138 +18,140 @@
             <div class="content">
                 <div class="guide_cont">
 
-                    <h1><span>text</span></h1>
-                    <div class="form_list">
-                        <div class="form_item">
-                            <div class="form_info">
-                                <label for="check2" class="form_label">매수금액입력</label>
-                                <button type="button" class="btn sm t4">매수가능금액</button>
-                            </div>
-                            <div class="unit_box">
-                                <input type="text" id="check2" name="inpText" placeholder="최소 1,000,000원 부터 매수가능해요">
-                                <span class="txt">원</span>
-                            </div>
-                            <div class="limit_txt">잔여매수한도 <strong class="point">10,000,000원</strong></div>
-                        </div>
-                    </div>
-
-                    <h1><span>checkbox</span></h1>
-                    <div class="form_list">
-                        <div class="form_item">
-                            <div class="check_box">
-                                <input type="checkbox" id="check1" name="inpCheck">
-                                <label for="check1">매수일자 <i class="date">2022.05.02</i></label>
-                            </div>
-                        </div>
-                        <div class="form_item">
-                            <div class="check_box">
-                                <input type="checkbox" id="check22" name="inpCheck99">
-                                <label for="check22">금융소비자 확인사항 및 유의사항을 읽고 이해하였음을 확인합니다.</label>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <h1><span>radio : basic</span></h1>
-                    <div class="form_list">
-                        <div class="form_item">
-                            <div class="radio_box">
-                                <input type="radio" id="radio1" name="inpRadio">
-                                <label for="radio1"><span>해지환급금</span></label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <h1><span>radio : box</span></h1>
-                    <div class="form_list">
-                        <div class="form_group auto">
-                            <div class="form_item bx">
-                                <div class="radio_box">
-                                    <input type="radio" id="radioY" name="inpRadio1">
-                                    <label for="radioY">네</label>
+                    <div class="comp">
+                        <h1 class="txt"><span>text</span></h1>
+                        <div class="form_list">
+                            <div class="form_item">
+                                <div class="form_info">
+                                    <label for="check2" class="form_label">매수금액입력</label>
+                                    <button type="button" class="btn sm t4">매수가능금액</button>
                                 </div>
-                            </div>
-                            <div class="form_item bx">
-                                <div class="radio_box">
-                                    <input type="radio" id="radioN" name="inpRadio1">
-                                    <label for="radioN">아니오</label>
+                                <div class="unit_box">
+                                    <input type="text" id="check2" name="inpText" placeholder="최소 1,000,000원 부터 매수가능해요">
+                                    <span class="txt">원</span>
                                 </div>
+                                <div class="limit_txt">잔여매수한도 <strong class="point">10,000,000원</strong></div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="form_list">
-                        <div class="form_group">
-                            <div class="form_item bx">
-                                <div class="radio_box">
-                                    <input type="radio" id="radioA_1" name="inpRadio2">
-                                    <label for="radioA_1">10% 이하</label>
-                                </div>
-                            </div>
-                            <div class="form_item bx">
-                                <div class="radio_box">
-                                    <input type="radio" id="radioA_2" name="inpRadio2">
-                                    <label for="radioA_2">30% 이하</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="form_list">
-                        <div class="form_item bx">
-                            <div class="radio_box">
-                                <input type="radio" id="radioBtn" name="inpRadio3">
-                                <label for="radioBtn">적극적인 투자를 통한 보유자산 증식</label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <h1><span>select</span></h1>
-                    <div class="form_list">
-                        <span class="form_label">레이블명</span>
-                        <div class="form_item">
-                            <select id="select1" title="" required>
-                                <option value="" disabled selected hidden>매도하실 거래를 선택해주세요</option>
-                                <option>매도1</option>
-                                <option>매도2</option>
-                                <option>매도3</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <h1><span>확인 동의체크</span></h1>
-                    <ul class="terms_list">
-                        <li>
-                            <div class="terms_item">
+                        <h1 class="txt"><span>checkbox</span></h1>
+                        <div class="form_list">
+                            <div class="form_item">
                                 <div class="check_box">
-                                    <input type="checkbox" id="checkAgree1" name="inpCheckAgree">
-                                    <label for="checkAgree1">상품설명서</label>
+                                    <input type="checkbox" id="check1" name="inpCheck">
+                                    <label for="check1">매수일자 <i class="date">2022.05.02</i></label>
                                 </div>
-                                <button type="button" class="btn sm t4">상세보기</button>
                             </div>
-                        </li>
-                        <li>
-                            <div class="terms_item">
+                            <div class="form_item">
                                 <div class="check_box">
-                                    <input type="checkbox" id="checkAgree2" name="inpCheckAgree">
-                                    <label for="checkAgree2">퍼스트 발행어음약관</label>
-                                </div>
-                                <button type="button" class="btn sm t4">상세보기</button>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="terms_item">
-                                <div class="check_box">
-                                    <input type="checkbox" id="checkAgree3" name="inpCheckAgree">
-                                    <label for="checkAgree3">투자자 확인사항</label>
+                                    <input type="checkbox" id="check22" name="inpCheck99">
+                                    <label for="check22">금융소비자 확인사항 및 유의사항을 읽고 이해하였음을 확인합니다.</label>
                                 </div>
                             </div>
-                            <div class="terms_cont">
-                                <p>상품설명서 및 약관 등의 주요내용을 읽고 상품의 내용, 핵심투자위험(신용위험, 시장위험, 환위험 등), 원금손실 가능성*, 수수료, 계약의 해제∙해지, 취약 금융소비자 우선 설명 등에 대해 확인하였습니다.</p>
-                                <p class="ico_star">발행어음은 예금자 보호법 상 보호상품이 아닙니다. 단, 매수 미사용 현금 잔액은 5천만원까지 (회사별 보호상품 합산) 예금자 보호됩니다.</p>
+                        </div>
+
+
+                        <h1 class="txt"><span>radio : basic</span></h1>
+                        <div class="form_list">
+                            <div class="form_item">
+                                <div class="radio_box">
+                                    <input type="radio" id="radio1" name="inpRadio">
+                                    <label for="radio1"><span>해지환급금</span></label>
+                                </div>
                             </div>
-                        </li>
-                    </ul>
+                        </div>
+
+                        <h1 class="txt"><span>radio : box</span></h1>
+                        <div class="form_list">
+                            <div class="form_group auto">
+                                <div class="form_item bx">
+                                    <div class="radio_box">
+                                        <input type="radio" id="radioY" name="inpRadio1">
+                                        <label for="radioY">네</label>
+                                    </div>
+                                </div>
+                                <div class="form_item bx">
+                                    <div class="radio_box">
+                                        <input type="radio" id="radioN" name="inpRadio1">
+                                        <label for="radioN">아니오</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form_list">
+                            <div class="form_group">
+                                <div class="form_item bx">
+                                    <div class="radio_box">
+                                        <input type="radio" id="radioA_1" name="inpRadio2">
+                                        <label for="radioA_1">10% 이하</label>
+                                    </div>
+                                </div>
+                                <div class="form_item bx">
+                                    <div class="radio_box">
+                                        <input type="radio" id="radioA_2" name="inpRadio2">
+                                        <label for="radioA_2">30% 이하</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form_list">
+                            <div class="form_item bx">
+                                <div class="radio_box">
+                                    <input type="radio" id="radioBtn" name="inpRadio3">
+                                    <label for="radioBtn">적극적인 투자를 통한 보유자산 증식</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h1 class="txt"><span>select</span></h1>
+                        <div class="form_list">
+                            <span class="form_label">레이블명</span>
+                            <div class="form_item">
+                                <select id="select1" title="" required>
+                                    <option value="" disabled selected hidden>매도하실 거래를 선택해주세요</option>
+                                    <option>매도1</option>
+                                    <option>매도2</option>
+                                    <option>매도3</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <h1 class="txt"><span>확인 동의체크</span></h1>
+                        <div class="agree_list">
+                            <div class="group">
+                                <div class="agree_item">
+                                    <div class="check_box">
+                                        <input type="checkbox" id="checkAgree1" name="inpCheckAgree">
+                                        <label for="checkAgree1">상품설명서</label>
+                                    </div>
+                                    <button type="button" class="btn sm t4">상세보기</button>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div class="agree_item">
+                                    <div class="check_box">
+                                        <input type="checkbox" id="checkAgree2" name="inpCheckAgree">
+                                        <label for="checkAgree2">퍼스트 발행어음약관</label>
+                                    </div>
+                                    <button type="button" class="btn sm t4">상세보기</button>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div class="agree_item">
+                                    <div class="check_box">
+                                        <input type="checkbox" id="checkAgree3" name="inpCheckAgree">
+                                        <label for="checkAgree3">투자자 확인사항</label>
+                                    </div>
+                                </div>
+                                <div class="add_cont">
+                                    <p>상품설명서 및 약관 등의 주요내용을 읽고 상품의 내용, 핵심투자위험(신용위험, 시장위험, 환위험 등), 원금손실 가능성*, 수수료, 계약의 해제∙해지, 취약 금융소비자 우선 설명 등에 대해 확인하였습니다.</p>
+                                    <p class="ico_star">발행어음은 예금자 보호법 상 보호상품이 아닙니다. 단, 매수 미사용 현금 잔액은 5천만원까지 (회사별 보호상품 합산) 예금자 보호됩니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
             </div>

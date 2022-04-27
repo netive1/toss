@@ -9,7 +9,7 @@
     <script src="../../asset/js/jquery-3.6.0.min.js"></script>
     <script src="../../asset/js/ui_plugins.js"></script>
     <script src="../../asset/js/ui_common.js"></script>
-    <link rel="stylesheet" href="../../../asset/css/common.css">
+    <link rel="stylesheet" href="../../asset/css/common.css">
 </head>
 
 <body>
@@ -19,8 +19,8 @@
             <div class="content">    
                 <div class="guide_cont">
 
-                    <h1><span># 가로스크롤 테이블</span></h1>
                     <div class="comp">
+                        <h1 class="txt"><span># 가로스크롤 테이블</span></h1>
                         <div class="horizon_scrollbar">
                             <table>
                                 <caption>매수일자, 매수금액, 세전평가, 세후평가, 매도시상환금액, 만기일, 경과일수, 중도해지이율에 대한 정보</caption>
@@ -84,7 +84,7 @@
                     
             
                     <div class="comp">
-                        <div class="tbl_info">
+                        <div class="info_box">
                             <h2 class="h2">퍼스트 발행어음 약정(6개월)</h2>
                             <div class="opt">
                                 <button type="button" class="btn sm t1">신규매수</button>
@@ -128,13 +128,56 @@
                         </table>
                     </div>
                     
-
                     <div class="comp">
-                        <div class="tbl_info">
+                        <div class="info_box">
+                            <h2 class="h2">퍼스트 발행어음 약정(6개월)</h2>
+                            <div class="opt">
+                                <button type="button" class="btn sm t1">신규매수</button>
+                            </div>
+                        </div>
+                        <table class="tbl_row line">
+                            <caption>상품명, 매수계좌, 매수금액, 약정기간, 만기이율, 중도해지이율, 만기일에 대한 정보</caption>
+                            <colgroup>
+                                <col class="col4">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">거래일시</th>
+                                    <td>2022.05.03 11:11:11</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">매도액면금액</th>
+                                    <td>2,000,000 원</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">중도해지이율</th>
+                                    <td><strong>연 0.20%</strong></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">약정기간</th>
+                                    <td>6개월(181일)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">경과일수</th>
+                                    <td>연 3.00%</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">소득세액</th>
+                                    <td>연 0.20%</td>
+                                </tr>
+                                <tr class="pay">
+                                    <th scope="row">상환금액</th>
+                                    <td>2,000,010 원</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="comp">
+                        <div class="info_box">
                             <div class="check_box">
                                 <input type="checkbox" id="check1" name="sell">
-                                <!-- <label for="check1"><span>만기일에 상환금액을 내 토스계좌로 다시 가져올게요</span></label> -->
-                                <label for="check1"><span>매수일자 <i class="date">2022.05.02</i></span></label>
+                                <label for="check1">매수일자 <i class="date">2022.05.02</i></label>
                             </div>
                         </div>
                         <table class="tbl_row">

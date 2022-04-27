@@ -9,3 +9,137 @@
 .list_num li .form_wrap .form_list .form_item.bx .radio_box label {padding-left: 20px; padding-right: 50px; text-align: left; height: auto; line-height: 27px;}
 .list_num li .form_wrap .form_list .form_item .radio_box .sub_txt span {display: block; margin-top: 6px; font-size: 14px; line-height: 24px;}
 .list_num li .form_wrap .ico_star {margin-top: 15px; margin-left: -32px; font-size: 14px; color: #666;}
+
+
+.governing_tit .tit_type1 {color: #3b7afe;}
+.governing_tit .tit_type2 {color: #5ec085;}
+.governing_tit .tit_type3 {color: #ef9a1b;}
+.governing_tit .tit_type4 {color: #ef671b;}
+.governing_tit .tit_type5 {color: #f32f2f;}
+
+
+.stick_wrap {margin-top: 68px;}
+.stick_wrap .stick_cont {display: flex; justify-content: space-between; border: 1px solid #eee; border-radius: 6px; background: #f9f9f9;}
+.stick_wrap .stick_cont .item {padding: 18px 10px; width: 20%; border-right: 1px solid #eee;}
+.stick_wrap .stick_cont .item:last-child {border-right: 0;}
+.stick_wrap .stick_cont .item span {display: block; font-size: 13px; line-height: 17px; text-align: center; color: #888;}
+.stick_wrap .stick_cont .item.one span {padding-top: 8px;}
+.stick_wrap .stick_cont .item.check {position: relative; background: #fff;}
+.stick_wrap .stick_cont .item.check:first-child {background: #fff; border-top-left-radius: 6px; border-bottom-left-radius: 6px;}
+.stick_wrap .stick_cont .item.check:last-child {background: #fff; border-top-right-radius: 6px; border-bottom-right-radius: 6px;}
+.stick_wrap .stick_cont .item.check span {position: relative; font-weight:500;}
+.stick_wrap .stick_cont .item.check span.f1 {color: #3b7afe;}
+.stick_wrap .stick_cont .item.check span.f2 {color: #5ec085;}
+.stick_wrap .stick_cont .item.check span.f3 {color: #ef9a1b;}
+.stick_wrap .stick_cont .item.check span.f4 {color: #ef671b;}
+.stick_wrap .stick_cont .item.check span.f5 {color: #f32f2f;}
+.stick_wrap .stick_cont .item.check::before {content: '내 투자성향'; position: absolute; top: -24px; left: 50%; transform: translateX(-50%); display: block; width: 100%; padding: 7px 2px; background: #3b7afe; color: #fff; font-size: 12px; font-weight: 500; border-radius: 4px; text-align: center; box-shadow: 0px 2px 3px rgb(0 0 0 / 15%);}
+.stick_wrap .stick_cont .item.check::after {content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%); display: block; width: 0px; height: 0px; border-left: 6px solid transparent; border-right: 6px solid transparent; border-top: 7px solid #3b7afe;}
+.stick_wrap p {margin-top: 16px; font-size: 14px; line-height: 24px;}
+
+.stick_wrap .stick_cont.type1 {border-right: 1px solid #eee;}
+.stick_wrap .stick_cont.type1 .item2 {padding: 26px 8px;}
+.stick_wrap .stick_cont.type1 .group1 .type1.group2 .item2 {border-right: 1px solid #eee;}
+.stick_wrap .stick_cont.type1 .item2 span {display: block; font-size: 13px; line-height: 17px; text-align: center; color: #888;}
+.stick_wrap .stick_cont.type1 .item2.check {position: relative; background: #fff;}
+.stick_wrap .stick_cont.type1 .item2.check:first-child {background: #fff; border-top-left-radius: 6px; border-bottom-left-radius: 6px;}
+.stick_wrap .stick_cont.type1 .item2.check span {position: relative; color: #3b7afe; font-weight: 500;}
+
+.stick_wrap .stick_cont.type1 .group1 {display: flex; justify-content: space-between; width: 100%;}
+.stick_wrap .stick_cont.type1 .group1 .type1.group2 {width: 80%;}
+.stick_wrap .stick_cont.type1 .group1 .type1.item2 {width: 20%;}
+.stick_wrap .stick_cont.type1 .group1 .type1.group2 {display: flex; justify-content: space-between;}
+.stick_wrap .stick_cont.type1 .group1 .type1.group2 .type2.group3 {width:75%;}
+.stick_wrap .stick_cont.type1 .group1 .type1.group2 .type2.item2 {width: 25%;}
+.stick_wrap .stick_cont.type1 .group1 .group2 .type2.group3 {display: flex; justify-content: space-between; width: 100%;}
+.stick_wrap .stick_cont.type1 .group1 .type1.group2 .type2.group3 .type3.group4 {width: 66.6%;}
+.stick_wrap .stick_cont.type1 .group1 .type1.group2 .type2.group3 .type3.item2 {width: 33.33%;}
+.stick_wrap .stick_cont.type1 .group1 .group2 .type2.group3 .type3.group4 {display: flex; justify-content: space-between;}
+.stick_wrap .stick_cont.type1 .group1 .group2 .type2.group3 .type3.group4 .type4.group5 {width: 50%;}
+.stick_wrap .stick_cont.type1 .group1 .group2 .type2.group3 .type3.group4 .type4.item2 {width: 50%;}
+
+.stick_wrap .stick_cont.type1 .group1 .item2 p {display: none;}
+.stick_wrap .stick_cont.type1 .group1 .type4.group5.check {position: relative;}
+.stick_wrap .stick_cont.type1 .group1 .type1.group2 .type2.group3 .type3.group4 .type4.group5.check .item2:first-child {background: #fff; border-top-left-radius: 6px; border-bottom-left-radius: 6px;}
+.stick_wrap .stick_cont.type1 .group1 .type1.group2 .type2.group3 .type3.group4 .type4.group5.check .item2:before {content: ''; position: absolute; top: -14px; left: 50%; transform: translateX(-50%); padding: 0; display: block; width: 100%; height: 8px; border-top: 1px solid #222; border-left: 1px solid #222; border-right: 1px solid #222; background: none; border-radius: 0;}
+.stick_wrap .stick_cont.type1 .group1 .type1.group2 .type2.group3 .type3.group4 .type4.group5.check .item2 p {display: block; position: absolute; top: -55px; left: 0; display: block; font-size: 13px; color: #222; font-weight: 500;}
+.stick_wrap .stick_cont.type1 .group1 .type1.group2 .type2.group3 .type3.group4 .type4.group5.check .item2 p.p1 {width: 150px;}
+.stick_wrap .stick_cont.type1 .group1 .type1.group2 .type2.group3 .type3.group4 .type4.group5.check .item2 span {position: relative; font-weight: 500; color: #3b7afe;}
+
+.stick_wrap .stick_cont.type1 .group1 .type1.group2 .type2.group3 .type3.group4.check {position: relative;}
+.stick_wrap .stick_cont.type1 .group1 .type1.group2 .type2.group3 .type3.group4.check .item2 {background: #fff;}
+.stick_wrap .stick_cont.type1 .group1 .type1.group2 .type2.group3 .type3.group4.check .item2:first-child {border-top-left-radius: 6px; border-bottom-left-radius: 6px;}
+.stick_wrap .stick_cont.type1 .group1 .type1.group2 .type2.group3 .type3.group4.check .item2:before {content: ''; position: absolute; top: -14px; left: 50%; transform: translateX(-50%); padding: 0; display: block; width: 100%; height: 8px; border-top: 1px solid #222; border-left: 1px solid #222; border-right: 1px solid #222; background: none; border-radius: 0;}
+.stick_wrap .stick_cont.type1 .group1 .type1.group2 .type2.group3 .type3.group4.check .item2 p.p2 {display: block; position: absolute; top: -55px; left: 0; display: block; font-size: 13px; color: #222; font-weight: 500;}
+.stick_wrap .stick_cont.type1 .group1 .type1.group2 .type2.group3 .type3.group4.check .item2 p {width: 100%; text-align: center;}
+.stick_wrap .stick_cont.type1 .group1 .type1.group2 .type2.group3 .type3.group4.check .item2 span {position: relative; font-weight: 500; color: #5ec085;}
+
+
+.stick_wrap .stick_cont.type1 .group1 .type1.group2 .type2.group3.check {position: relative;}
+.stick_wrap .stick_cont.type1 .group1 .type1.group2 .type2.group3.check .item2 {background: #fff;}
+.stick_wrap .stick_cont.type1 .group1 .type1.group2 .type2.group3.check .item2:first-child {border-top-left-radius: 6px; border-bottom-left-radius: 6px;}
+.stick_wrap .stick_cont.type1 .group1 .type1.group2 .type2.group3.check .item2:before {content: ''; position: absolute; top: -14px; left: 50%; transform: translateX(-50%); padding: 0; display: block; width: 100%; height: 8px; border-top: 1px solid #222; border-left: 1px solid #222; border-right: 1px solid #222; background: none; border-radius: 0;}
+.stick_wrap .stick_cont.type1 .group1 .type1.group2 .type2.group3.check .item2 p.p2 {display: block; position: absolute; top: -55px; left: 0; display: block; font-size: 13px; color: #222; font-weight: 500;}
+.stick_wrap .stick_cont.type1 .group1 .type1.group2 .type2.group3.check .item2 p {width: 100%; text-align: center;}
+.stick_wrap .stick_cont.type1 .group1 .type1.group2 .type2.group3.check .item2 span {position: relative; font-weight: 500; color: #ef9a1b;}
+
+.stick_wrap .stick_cont.type1 .group1 .type1.group2.check {position: relative;}
+.stick_wrap .stick_cont.type1 .group1 .type1.group2.check .item2 {background: #fff;}
+.stick_wrap .stick_cont.type1 .group1 .type1.group2.check .item2:first-child {border-top-left-radius: 6px; border-bottom-left-radius: 6px;}
+.stick_wrap .stick_cont.type1 .group1 .type1.group2.check .item2:before {content: ''; position: absolute; top: -14px; left: 50%; transform: translateX(-50%); padding: 0; display: block; width: 100%; height: 8px; border-top: 1px solid #222; border-left: 1px solid #222; border-right: 1px solid #222; background: none; border-radius: 0;}
+.stick_wrap .stick_cont.type1 .group1 .type1.group2.check .item2 p.p2 {display: block; position: absolute; top: -55px; left: 0; display: block; font-size: 13px; color: #222; font-weight: 500;}
+.stick_wrap .stick_cont.type1 .group1 .type1.group2.check .item2 p {width: 100%; text-align: center;}
+.stick_wrap .stick_cont.type1 .group1 .type1.group2.check .item2 span {position: relative; font-weight: 500; color: #ef671b;}
+
+.stick_wrap .stick_cont.type1 .group1.check {position: relative;}
+.stick_wrap .stick_cont.type1 .group1.check .item2 {background: #fff;}
+.stick_wrap .stick_cont.type1 .group1.check .item2:first-child {border-top-left-radius: 6px; border-bottom-left-radius: 6px;}
+.stick_wrap .stick_cont.type1 .group1.check .item2:before {content: ''; position: absolute; top: -14px; left: 50%; transform: translateX(-50%); padding: 0; display: block; width: 100%; height: 8px; border-top: 1px solid #222; border-left: 1px solid #222; border-right: 1px solid #222; background: none; border-radius: 0;}
+.stick_wrap .stick_cont.type1 .group1.check .item2 p.p2 {display: block; position: absolute; top: -55px; left: 0; display: block; font-size: 13px; color: #222; font-weight: 500;}
+.stick_wrap .stick_cont.type1 .group1.check .item2 p {width: 100%; text-align: center;}
+.stick_wrap .stick_cont.type1 .group1.check .item2 span {position: relative; font-weight: 500; color: #f32f2f;}
+
+
+
+.check_box.mt40 {margin-top: 40px;}
+
+.col_stick_wrap {margin: 25px auto 40px; display: flex; justify-content: space-between; align-items: center; flex-direction: column;}
+.col_stick_wrap .item {position: relative; padding: 20px 0; width: 130px; border-top: 1px solid #eee; border-left: 1px solid #eee; border-right: 1px solid #eee; text-align: center; text-align: center;}
+.col_stick_wrap .item:first-child {border-top-left-radius: 6px; border-top-right-radius: 6px;}
+.col_stick_wrap .item:last-child {border-bottom-left-radius: 6px; border-bottom-right-radius: 6px; border-bottom: 1px solid #eee;}
+.col_stick_wrap .item span {display: block; font-size: 14px;}
+.col_stick_wrap .item span strong, .col_stick_wrap .item span span {display: block; padding-top: 6px; font-size: 16px;} 
+.col_stick_wrap .item.active {background: #f9f9f9;}
+.col_stick_wrap .item.tip1::before {content: '상품의 위험등급'; position: absolute; bottom: 7px; right: -103px; padding: 7px 10px; font-size: 14px; line-height: 24px; color: #fff; font-weight: 700; background: #F32F2F; border-radius: 6px; box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.15);}
+.col_stick_wrap .item.tip1::after {content: ''; position: absolute; bottom: 37px; right: 0; width: 0px; height: 0px; border-left: 7px solid transparent; border-right: 7px solid transparent; border-top: 8px solid #F32F2F;}
+.col_stick_wrap .item.tip2::before {content: '나의 투자성향'; position: absolute; bottom: 7px; left: -88px; padding: 7px 10px; font-size: 14px; line-height: 24px; color: #fff; font-weight: 700; background: #EF9A1B; border-radius: 6px; box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.15);}
+.col_stick_wrap .item.tip2::after {content: ''; position: absolute; bottom: 37px; left: 0; width: 0px; height: 0px; border-left: 7px solid transparent; border-right: 7px solid transparent; border-top: 8px solid #EF9A1B;}
+
+.card_info {padding: 40px 20px 30px; background: #5A6BFF; color: #fff;}
+.card_info .txt_info p {margin-bottom: 12px; font-size: 14px;}
+.card_info .txt_info strong {font-size: 22px; font-weight: 700;}
+.card_info .txt_info button.re_btn {display: inline-block; padding-left: 8px; width: 24px; height: 24px; background-image: url(../../asset/img/ico_refresh.png); background-size: 24px 24px; background-repeat: no-repeat; vertical-align: top;}
+.card_info .txt_info button.re_btn span {display: none;}
+.card_info .tbl_info {margin-top: 30px;}
+.card_info .tbl_info dl {display: flex; padding: 10px 0; width: 100%; justify-content: space-between; align-items: center;}
+.card_info .tbl_info dt {font-size: 14px; font-weight: 400;}
+.card_info .tbl_info dd {font-size: 16px; font-weight: 500;}
+.card_info .link_btn {margin-top: 30px; display: flex; justify-content: space-between; align-items: center;}
+.card_info .link_btn a.a_btn {display: block; padding: 20px 20px; width: calc(50% - 11px); color: #fff; border-radius: 10px; background: #5263FA;}
+.card_info .link_btn a.a_btn strong {position: relative; display: inline-block; margin-top: 8px; color: #fff;}
+.card_info .link_btn a.a_btn strong::after {content: ''; position: absolute; top: 3px; right: -10px; width: 5px; height: 8px; background: url(../../asset/img/ico_arrow_s_w.png); background-size: 5px 8px;}
+
+.info_list_wrap .list {padding: 10px 20px 25px; border-bottom: 1px solid #eee;}
+.info_list_wrap .list dl {display: flex; padding: 0; width: 100%; justify-content: space-between; align-items: center;}
+.info_list_wrap .list dl dt {font-size: 16px; font-weight: 400; line-height: 28px; color: #222;}
+.info_list_wrap .list dl dd {font-size: 16px; font-weight: 500; line-height: 28px;}
+.info_list_wrap .list dl dd span {padding-right: 4px;}
+.info_list_wrap .list dl:last-child {margin-top: 8px;}
+.info_list_wrap .list dl:last-child dt, .info_list_wrap .list dl:last-child dd {font-size: 13px; font-weight: 400; line-height: 20px; color: #666;}
+
+.empty_wrap {margin-top: 40px;}
+.empty_wrap p {position: relative; padding-top: 125px; font-size: 16px; font-weight: 400; line-height: 28px; text-align: center;}
+.empty_wrap p:before {content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 130px; height: 110px; background: url(../../asset/img/bg_nodata.png); background-size: 130px 110px;}
+
+/* 커튼팝업 */
+.dialog.bottom .dialog_wrap .dialog_content .section .info_box .opt.type1 {font-size: 15px;}

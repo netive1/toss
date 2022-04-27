@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>(팝업) 투자정보확인서 변경, 정보 재등록</title>
-  
+  <title>(팝업) 잔여매수한도 확인</title>
+
   <script src="../asset/js/jquery-3.6.0.min.js"></script>
   <script src="../asset/js/ui_plugins.js"></script>
   <script src="../asset/js/ui_common.js"></script>
@@ -13,23 +13,23 @@
 </head>
 <body>
 
-  <div class="dialog bottom show" data-modal="dialogBottom" role="dialog" aria-hidden="false" tabindex="0">
+  <div class="dialog alert show" data-modal="dialogSizeM" role="dialog" aria-hidden="false" tabindex="0">
     <div class="dialog_wrap">
       <div class="dialog_header">
-        <h1>그대로 등록하실 수 없어요</h1>
+        <h1>잔여매수한도를 확인해주세요</h1>
       </div>
       <div class="dialog_content">
         <div class="section">
-          <p>금융소비자보호법시행에따라 투자자정보확인서가변경되었습니다. 정보를다시등록해주세요.</p>
+          <p>고객별로전상품통합 1천만원까지만가능합니다. <br>(잔여한도: 5,000,000원)</p>
         </div>
       </div>
-      <div class="dialog_footer">                
+      <div class="dialog_footer">
         <div class="dialog_btn_wrap">
-          <button type="button" class="btn primary dialog_close">확인</button>
+          <button type="button" class="btn dialog_close">확인</button>
         </div>
       </div>
     </div>
   </div>
-  
+
 </body>
 </html>

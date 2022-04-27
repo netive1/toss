@@ -22,13 +22,14 @@ input:-webkit-autofill:active {box-shadow: 0 0 0 30px #fff inset !important; }
 .worklist table tbody td {padding: 5px 10px; color: #000; font-size: 12px; border: 1px solid #ddd;}
 .worklist table tbody td a {cursor: pointer;}
 /* .worklist table tbody td:last-child:before {content: ""; display: inline-block; width: 10px; height: 10px; margin-right: 6px; } */
-.worklist table tbody tr:hover td {background-color: #f9f9f9;}
-.worklist table tbody tr.hidden td {background-color: #f9f9f9; color: #bbb; text-decoration: line-through;}
+.worklist table tbody tr:hover td{background-color: #f9f9f9;}
+.worklist table tbody tr.hidden td{background-color: #f9f9f9; color: #bbb; text-decoration: line-through;}
 .worklist table tbody tr.hidden td:last-child:before {display: none;}
 .worklist table tbody tr.complete td{background-color:#fbf7ff;}
 .worklist table tbody tr.complete td a{color:#60f;text-decoration:underline;}
-.worklist table tbody td.tc {text-align:center;}
-.worklist table tbody td:first-child, .worklist table tbody td:last-child {text-align: center;}
+.worklist table tbody td.tc,
+.worklist table tbody td:first-child{text-align:center;}
+.worklist table tbody td:last-child{text-align:left;}
 
 
 .worklist .w_cont h2{margin-bottom:10px; color:#4a4a4a;}

@@ -5,22 +5,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
     <meta name="format-detection" content="telephone=no">
-    <title>Layout</title>
+    <title>main</title>
     <script src="../asset/js/jquery-3.6.0.min.js"></script>
     <script src="../asset/js/ui_plugins.js"></script>
     <script src="../asset/js/ui_common.js"></script>
     <link rel="stylesheet" href="../asset/css/contents.css">
     <script>
         $(function() {
-            $('.main_goods_slide').slick({
-                infinite: false,
-                slidesToShow: 1,
-                slidesToScroll: 2,
-                autoplaySpeed:3000,
-                speed:1000,
-                arrows: true,
-                dots:false
-            });
+            fn.slider('.goods_slider', true);
         });
     </script>
 </head>
@@ -28,18 +20,84 @@
 <body>
     <div id="wrap">
         <section id="container">
-            <div class="content">
-                <ul class="main_goods_slide">
+
+            <div class="main_visual">
+                <ul class="goods_slider">
                     <li>
-                        <h1>더 많은 상품<br>거래하기</h1>
+                        <h1>
+                            <p>채권, RP 등</p>
+                            더 많은 상품<br>거래하기1
+                        </h1>
                         <button type="button" class="btn">자세히보기</button>
                     </li>
                     <li>
-                        <h1>더 많은 상품<br>거래하기</h1>
+                        <h1>
+                            <p>채권, RP 등</p>
+                            더 많은 상품<br>거래하기2
+                        </h1>
                         <button type="button" class="btn">자세히보기</button>
                     </li>
                 </ul>
+                <div class="slide_num"></div>
+            </div>
+           
+            <div class="main_content">
+                <div class="comp">
+                    <div class="quick_menu_list">
+                        <h2>바로가기</h2>
+                        <p class="add_txt">내 잔고 조회, 입출금과 거래내역을 알려드려요</p>
+                        <ul class="quick_item">
+                            <li>
+                                <a href="#none"><span class="menu1">잔고조회</span></a>
+                            </li>
+                            <li>
+                                <a href="#none"><span class="menu2">입출금</span></a>
+                            </li>
+                            <li>
+                                <a href="#none"><span class="menu3">거래내역</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
+                <div class="comp">
+                    <ul class="stock_goods_list">
+                        <li>
+                            <a href="#none">
+                                <strong>퍼스트 발행어음 약정<span class="tag">6개월</span></strong>
+                                <dl class="dl_list">
+                                    <div>
+                                        <dt>가입기간</dt>
+                                        <dd>181일</dd>
+                                    </div>
+                                    <div>
+                                        <dt>최소매수</dt>
+                                        <dd>10만원</dd>
+                                    </div>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <strong>퍼스트 발행어음 약정<span class="tag">12개월</span></strong>
+                                <dl class="dl_list">
+                                    <div>
+                                        <dt>가입기간</dt>
+                                        <dd>365일</dd>
+                                    </div>
+                                    <div>
+                                        <dt>최소매수</dt>
+                                        <dd>100만원</dd>
+                                    </div>
+                                </dl>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="comp guide">
+                    해당 페이지는 한국투자증권에서 제공하는 금융상품 거래 서비스로, 토스뱅크는 투자 및 금융상품 판매 중개에 관여하지 않습니다. (고객센터 1544-5000) 
+                </div>
 
             </div>
         </section>
