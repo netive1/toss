@@ -34,3 +34,13 @@
 .dialog.modal .dialog_wrap .dialog_content .section .guide_box:nth-child(2) {margin-top: 39px;}
 .dialog.modal .dialog_wrap .dialog_content .section .guide_box .dl_list dt:not(:first-of-type), .dl_list dd:not(:first-of-type) {margin-top: 7px;}
 .dialog.modal .dialog_wrap .dialog_footer .dialog_btn_wrap .btn.normal {height: 60px; font-size: 18px; color:#3b7afe;}
+
+
+.governing_box {margin-top: 44px; padding: 70px 0;}
+.governing_box .governing {margin: 0;}
+
+.comp_box .comp {padding: 0 20px;}
+.comp_box .comp .tbl_row {margin-top: 0; letter-spacing: -.7px; line-height: 24px; padding: 1px 0;}
+
+.dialog_btn_wrap.bottom {position: fixed; width: 100%; left: 0; bottom: 0;}
+.dialog_btn_wrap.btn2 {display: flex; justify-content: center; align-items: center;}
