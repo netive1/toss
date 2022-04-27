@@ -3,6 +3,7 @@
 .dialog.alert .dialog_wrap .dialog_header h1 {font-size:16px; line-height: 27px !important; letter-spacing: -.6px; }
 .dialog.alert .dialog_wrap .dialog_content {height: auto; margin-top: 2px;}
 .dialog.alert .dialog_wrap .dialog_content .section >p {letter-spacing: -.6px;}
+.dialog.alert .dialog_wrap .dialog_content .section >p >span.price {font-weight: 600;}
 .dialog.alert .dialog_wrap .dialog_content .section .ico_star {margin-top: 5px;}
 .dialog.alert .dialog_wrap .dialog_footer .dialog_btn_wrap .btn{font-size: 18px; height: 60px;}
 
