@@ -6,6 +6,7 @@ $(function() {
   fn.popup.init();
   fn.slider();
   fn.agreeCheck();
+  fn.inputUnit();
 });
 
 
@@ -166,6 +167,13 @@ const fn = {
         arrows: false,
         dots:true
     });
+  },
+  inputUnit : function() {
+    $('.unit_box input').on('focusin', function() {
+      $(this).parent().addClass('on');
+    });
+    $('.unit_box input').on('focusout mouseleave ')
+
   },
   agreeCheck : function() {
     var $input = $('.agree_list input[name="inpCheckAgree"]');
