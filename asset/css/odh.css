@@ -140,3 +140,23 @@
 .empty_wrap {margin-top: 40px;}
 .empty_wrap p {position: relative; padding-top: 125px; font-size: 16px; font-weight: 400; line-height: 28px; text-align: center;}
 .empty_wrap p:before {content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 130px; height: 110px; background: url(../../asset/img/bg_nodata.png); background-size: 130px 110px;}
+
+.line_wrap {margin-top: 20px; text-align: center;}
+.line_wrap span {position: relative; display: inline-block; padding-left: 30px; font-size: 14px; line-height: 24px; font-weight: 400; color: #666;}
+.line_wrap span:before {content: ''; position: absolute; top: 0; left: 0; width: 24px; height: 24px;}
+.line_wrap.type1 span:first-child:before {background: url(../../asset/img/ico_export_logo.png) no-repeat; background-size: cover; background-position: 0 0}
+.line_wrap.type1 span:last-child:before {background: url(../../asset/img/ico_export_logo.png) no-repeat; background-size: cover; background-position: 0 -24px;}
+.line_wrap.type1 i {display: inline-block; margin: 0 12px; width: 24px; height: 24px; background: red; vertical-align: top;}
+.line_wrap.type1 i span {display: none;}
+
+.line_wrap.type2 span:first-child:before {background: url(../../asset/img/ico_export_logo.png) no-repeat; background-size: cover; background-position: 0 -24px}
+.line_wrap.type2 span:last-child:before {background: url(../../asset/img/ico_export_logo.png) no-repeat; background-size: cover; background-position: 0 0;}
+.line_wrap.type2 i {display: inline-block; margin: 0 12px; width: 24px; height: 24px; background: red; vertical-align: top;}
+.line_wrap.type2 i span {display: none;}
+
+.won_input_wrap {padding: 70px 0 100px;}
+.won_input_wrap .unit_box input[type="text"] {padding: 0; font-size: 28px; font-weight: 700; border: 0; color: #222; text-align: center;}
+.won_input_wrap .unit_box input[type="text"]::placeholder {font-size: 28px; font-weight: 500;}
+.won_input_wrap span {display: block; margin-top: 8px; text-align: center;}
+.won_input_wrap span.error {color: #F32F2F;}
+.won_input_wrap span.error span {display: block; margin-bottom: 10px;}
