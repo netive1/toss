@@ -68,6 +68,7 @@ table .col3{width:120px;}
 table .col4{width:140px;}
 
 .info_box{display:flex; align-items:flex-end; margin-top:25px; margin-bottom:15px;}
+.info_box.money{margin-top:40px;}
 .info_box .check_box label{color:#222; font-weight:500;}
 .info_box .opt{margin-left:auto; margin-right:0; line-height:inherit;}
 .info_box .h2{margin-bottom:0;}
