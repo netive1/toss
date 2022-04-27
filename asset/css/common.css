@@ -69,6 +69,10 @@ table .col4{width:140px;}
 
 .info_box{display:flex; align-items:flex-end; margin-top:25px; margin-bottom:15px;}
 .info_box.money{margin-top:40px;}
+/* 0427 커튼팝업 관련 - odh */
+.info_box.money .opt span {font-size: 16px; font-weight: 500; line-height: 28px;}
+.info_box.money .opt span span {padding-right: 4px;}
+
 .info_box .check_box label{color:#222; font-weight:500;}
 .info_box .opt{margin-left:auto; margin-right:0; line-height:inherit;}
 .info_box .h2{margin-bottom:0;}
