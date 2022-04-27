@@ -169,11 +169,12 @@ const fn = {
     });
   },
   inputUnit : function() {
-    $('.unit_box input').on('focusin', function() {
+    $('.unit_box input').on('focusin touchstart', function() {
       $(this).parent().addClass('on');
     });
-    $('.unit_box input').on('focusout mouseleave ')
-
+    $('.unit_box input').on('focusout touchmove', function() {
+      $(this).parent().removeClass('on');
+    });
   },
   agreeCheck : function() {
     var $input = $('.agree_list input[name="inpCheckAgree"]');

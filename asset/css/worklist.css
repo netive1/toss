@@ -16,12 +16,11 @@ input:-webkit-autofill:focus,
 input:-webkit-autofill:active {box-shadow: 0 0 0 30px #fff inset !important; }
 
 .worklist{position:relative; margin:20px;}
-.worklist .table_wrap {overflow:hidden;}
+/* .worklist .table_wrap {overflow:hidden;} */
 .worklist table {width: 100%; table-layout: auto; border-spacing: 0; border-collapse: collapse; border:1px solid #c1c1c1; border-left:0; border-bottom:0; overflow: hidden;}
 .worklist table thead th {padding: 5px 0; border-left:1px solid #c1c1c1; background: #efefef; color:#404040; font-size: 12px; font-weight: 500;}
 .worklist table tbody td {padding: 5px 10px; color: #000; font-size: 12px; border: 1px solid #ddd;}
 .worklist table tbody td a {cursor: pointer;}
-/* .worklist table tbody td:last-child:before {content: ""; display: inline-block; width: 10px; height: 10px; margin-right: 6px; } */
 .worklist table tbody tr:hover td{background-color: #f9f9f9;}
 .worklist table tbody tr.hidden td{background-color: #f9f9f9; color: #bbb; text-decoration: line-through;}
 .worklist table tbody tr.hidden td:last-child:before {display: none;}
