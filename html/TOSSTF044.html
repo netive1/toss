@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>	매수 실패 1 - 잔액부족</title>
+  
+  <script src="../asset/js/jquery-3.6.0.min.js"></script>
+  <script src="../asset/js/ui_plugins.js"></script>
+  <script src="../asset/js/ui_common.js"></script>
+  <link rel="stylesheet" href="../asset/css/contents.css">
+</head>
+<body>
+
+  <div id="wrap">
+
+    <header id="header">
+      <h1 class="offscr">한국투자증권 토스 웹 발행어음거래</h1>
+      <p>한국투자증권에서 제공하는 서비스입니다</p>
+    </header>
+
+    <section id="container">
+        <div class="guide_cont">
+
+          <div class="governing_box">
+            <div class="governing ico fail">
+              <h1 class="governing_tit">매수하지 못했어요</h1>
+              <p class="add_txt">매수금액을 한국투자증권계좌로 이체하지 못했습니다. 토스뱅크계좌를 확인 후 다시 매수해주세요.</p>
+            </div>
+          </div>
+
+          <div class="comp_box">
+            <div class="comp">
+              <table class="tbl_row">
+                <caption>투자방식, 약정기간, 약정이율, 중도해지이율, 상품위험도에 대한 정보</caption>
+                <colgroup>
+                  <col class="col4">
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th scope="row">토스뱅크계좌</th>
+                    <td>10000-0101-0505</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">한국투자증권계좌</th>
+                    <td>74400031-01</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">매수신청금액</th>
+                    <td>5,000,000원</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">실패사유</th>
+                    <td><span class="add_txt1">시스템오류</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <div class="dialog_footer">
+      <div class="dialog_btn_wrap bottom btn2">
+        <button type="button" class="btn second dialog_close">지금 가져오기</button>
+        <button type="button" class="btn primary dialog_close">확인</button>
+      </div>
+    </div>
+
+  </div>
+  
+</body>
+</html>
