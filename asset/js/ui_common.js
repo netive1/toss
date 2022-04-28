@@ -169,11 +169,13 @@ const fn = {
     });
   },
   inputUnit : function() {
-    $('.unit_box input').on('focusin touchstart', function() {
+    $(document).on('focusin touchstart', '.unit', function() {
       $(this).parent().addClass('on');
     });
-    $('.unit_box input').on('focusout touchmove', function() {
-      $(this).parent().removeClass('on');
+    $(document).on('focusout touchmove', '.unit', function() {
+        if($(this).val() === '') {
+          $(this).parent().removeClass('on');
+        }
     });
   },
   agreeCheck : function() {
@@ -211,10 +213,7 @@ const fn = {
         $input.prop('checked', false);
       }
     }
-  
-
     event();
-
   }
 }
 
