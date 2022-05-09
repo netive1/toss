@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+.dialog.alert .dialog_wrap .dialog_header h1 {font-size:16px; line-height: 27px !important; letter-spacing: -.6px; }
+.dialog.alert .dialog_wrap .dialog_content {height: auto; margin-top: 2px;}
+.dialog.alert .dialog_wrap .dialog_content .section >p {letter-spacing: -.6px;}
+.dialog.alert .dialog_wrap .dialog_content .section >p >span.price {font-weight: 600;}
+.dialog.alert .dialog_wrap .dialog_content .section .ico_star {margin-top: 5px;}
+.dialog.alert .dialog_wrap .dialog_footer .dialog_btn_wrap .btn{font-size: 18px; height: 60px;}
+
+.dialog.full .dialog_wrap .dialog_header {padding:41px 20px 16px;}
+.dialog.full .dialog_wrap .dialog_header .add_txt2 {margin-top: 16px;}
+.dialog.full .dialog_wrap .dialog_content .section .h2 {margin: 24px 0 16px;}
+.dialog.full .dialog_wrap .dialog_content .section .invest_status {width: 100%; border-top: 1px solid #222; margin-top: 2px;}
+.dialog.full .dialog_wrap .dialog_content .section .invest_status dl {display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eee; padding: 16px 20px; height: 56px;}
+.dialog.full .dialog_wrap .dialog_content .section .invest_status dd {font-weight: 500;}
+.dialog.full .dialog_wrap .hr {margin : 2px 0 40px 0;}
+
+.dialog.full .dialog_wrap .h1{font-size:22px; font-weight:600; line-height:37px; word-break:keep-all;}
+.dialog.full .dialog_wrap .dialog_content .h1{line-height: 37px; margin-top:40px;}
+.dialog.full .dialog_wrap .dialog_content .lh-24 {line-height: 24px;}
+.dialog.full .dialog_wrap .dialog_content p {line-height: 24px;}
+/*
+.invest_tendency {display: flex; justify-content: center; align-items: center; width: 100%; height: 70px; border: 1px solid #eee; border-radius: 6px; text-align: center; margin: 68px 0 18px 0;}
+.invest_tendency .invest_tendency_item {display: flex; justify-content: center; align-items: center; width: 25%; height: 100%; background: #F9F9F9; font-size:13px;}
+.invest_tendency .invest_tendency_item >p {line-height: 17px;}
+.invest_tendency .invest_tendency_item.active {position: relative; background: #fff; color: #3B7AFE;}
+.invest_tendency .invest_tendency_item.active::before {content: "내 투자성향"; position: absolute; width: 68px; height: 28px; left: 0px; top: -28px; background: #3B7AFE; box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.15);  border-radius: 4px; color: #fff; font-size: 12px; line-height: 30px;}
+.invest_tendency .invest_tendency_item.active::after {content: ""; position: absolute; width: 7px; height: 7px; background: #3B7AFE; left: 50%; top: -3px; transform: translateX(-50%) rotate(45deg);}
+*/
+
+.dialog.modal .dialog_content{height:auto;}
+.dialog.modal .dialog_wrap .dialog_content .section .list_num.t1 {padding-left: 0; margin-top:0;}
+.dialog.modal .dialog_wrap .dialog_content .section .list_num.t1 > li {padding-left:26px; font-size:14px; bottom: 1px; margin-bottom: 18px;}
+.dialog.modal .dialog_wrap .dialog_content .section .list_num.t1 > li::before {color:#666; background:#F1F1F1; top:2px;}
+.dialog.modal .dialog_wrap .dialog_content .section .guide_box:nth-child(2) {margin-top: 39px;}
+.dialog.modal .dialog_wrap .dialog_content .section .guide_box .dl_list dt:not(:first-of-type), .dl_list dd:not(:first-of-type) {margin-top: 7px;}
+.dialog.modal .dialog_wrap .dialog_footer .dialog_btn_wrap .btn.normal {height: 60px; font-size: 18px; color:#3b7afe;}
+
+
+.governing_box {margin-top: 44px; padding: 70px 0;}
+.governing_box .governing {margin: 0;}
+
+.comp_box .comp {padding: 0 20px;}
+.comp_box .comp .tbl_row {margin-top: 0; letter-spacing: -.7px; line-height: 24px; padding: 1px 0;}
+
+.dialog_btn_wrap.bottom {position: fixed; width: 100%; left: 0; bottom: 0;}
+.dialog_btn_wrap.btn2 {display: flex; justify-content: center; align-items: center;}
